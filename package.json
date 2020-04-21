@@ -1,0 +1,25 @@
+{
+  "name": "protobuf2swagger",
+  "version": "0.0.0-alpha.1",
+  "description": "Convert protobuf to swagger open api v3 format",
+  "main": "index.js",
+  "bin": {
+    "protobuf2swagger": "./bin/protobuf2swagger.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JennieJi/protobuf2swagger"
+  },
+  "keywords": [
+    "protobuf"
+  ],
+  "author": "Jennie Ji <jennie.ji@hotmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^2.20.0",
+    "protobufjs": "^6.8.8"
+  }
+}
