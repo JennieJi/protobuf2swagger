@@ -1,6 +1,6 @@
- const field2JSON = require('./field2JSON.js');
- 
- function messageToJSON(proto) {
+const field2JSON = require('./field2JSON.js');
+
+function messageToJSON(proto) {
   const { fields, comment: description } = proto;
   let required = [];
   const properties = Object.keys(fields).reduce((ret, field) => {
@@ -11,14 +11,14 @@
     }
     return {
       ...ret,
-      [field]: field2JSON(fieldDef)
+      [field]: field2JSON(fieldDef),
     };
   }, {});
   return {
     type: 'object',
     properties,
     required,
-    description
+    description,
   };
 }
 module.exports = messageToJSON;

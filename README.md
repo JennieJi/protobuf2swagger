@@ -1,5 +1,4 @@
-protobuf2swagger
-===
+# protobuf2swagger
 
 Work in progress project for saving some life, update not garrenteed. Welcome for pull request :).
 
@@ -8,13 +7,13 @@ Then you may render it easily with [SwaggerUI](https://github.com/swagger-api/sw
 
 # What is supported
 
-- convert *enum*, *message* into components, paths will reference to the components schema
-- basic types mapping to JS type *number*, *string*, *boolean* ( long types will be mapped to *string*)
+- convert _enum_, _message_ into components, paths will reference to the components schema
+- basic types mapping to JS type _number_, _string_, _boolean_ ( long types will be mapped to _string_)
 - recognize fields:
-  - [OperationObject](https://swagger.io/specification/#operationObject).requestBody.$proto  
-  Replace requestBody with a [Reference Object](https://swagger.io/specification/#referenceObject)
-  - [OperationObject](https://swagger.io/specification/#operationObject).responses.$proto  
-  Replace responses['200'] with a [Reference Object](https://swagger.io/specification/#referenceObject)
+  - [OperationObject](https://swagger.io/specification/#operationObject).requestBody.\$proto  
+    Replace requestBody with a [Reference Object](https://swagger.io/specification/#referenceObject)
+  - [OperationObject](https://swagger.io/specification/#operationObject).responses.\$proto  
+    Replace responses['200'] with a [Reference Object](https://swagger.io/specification/#referenceObject)
 
 # Install
 
@@ -24,8 +23,8 @@ Then you may render it easily with [SwaggerUI](https://github.com/swagger-api/sw
 
 `protobuf2swagger [config_file]`
 
-| Argument | Description |
-| --- | --- |
+| Argument    | Description                                                                                   |
+| ----------- | --------------------------------------------------------------------------------------------- |
 | config_file | Customize configuration file. Default to **protobuf2swagger.config.js** under current folder. |
 
 For options may check `protobuf2swagger --help`. (Nothing there yet, seriously.)
@@ -33,49 +32,57 @@ For options may check `protobuf2swagger --help`. (Nothing there yet, seriously.)
 ## Config File
 
 Example:
+
 ```javascript
 module.exports = {
   file: 'test.proto',
-  dist: 'apischema.json', 
-  customSchema: {  // Similar to openapi v3 format
+  // or multiple files
+  files: ['test1.proto', 'test2.proto'],
+  dist: 'apischema.json',
+  customSchema: {
+    // Similar to openapi v3 format
     info: {
       title: 'API',
       version: '1.0.0',
       contact: {
         name: 'Jennie Ji',
         email: 'jennie.ji@hotmail.com',
-        url: 'jennieji.github.io'
+        url: 'jennieji.github.io',
       },
     },
-    tags: [{
-      name: 'test',
-      description: ''
-    }],
+    tags: [
+      {
+        name: 'test',
+        description: '',
+      },
+    ],
     paths: {
       '/api/test': {
         get: {
           requestBody: {
-            $proto: 'GetDataRequest',  // Tell me the protobuf message name
+            $proto: 'GetDataRequest', // Tell me the protobuf message name
           },
           responses: {
             $proto: 'GetDataResponse', // Tell me the protobuf message name
-          }
-        }
-      }
+          },
+        },
+      },
     },
     components: {
       securitySchemes: {
         cookieAuth: {
           type: 'apiKey',
           in: 'cookie',
-          name: 'token'
-        }
-      }
+          name: 'token',
+        },
+      },
     },
-    security: [{
-      cookieAuth: []
-    }]
-  }
+    security: [
+      {
+        cookieAuth: [],
+      },
+    ],
+  },
 };
 ```
 
@@ -87,12 +94,15 @@ index.html (modified from swagger-ui-dist)
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" />
     <title>API Document</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.22.2/swagger-ui.css" >
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.22.2/swagger-ui.css"
+    />
     <style>
-      html
-      {
+      html {
         box-sizing: border-box;
         overflow: -moz-scrollbars-vertical;
         overflow-y: scroll;
@@ -100,14 +110,12 @@ index.html (modified from swagger-ui-dist)
 
       *,
       *:before,
-      *:after
-      {
+      *:after {
         box-sizing: inherit;
       }
 
-      body
-      {
-        margin:0;
+      body {
+        margin: 0;
         background: #fafafa;
       }
     </style>
@@ -116,28 +124,23 @@ index.html (modified from swagger-ui-dist)
   <body>
     <div id="swagger-ui"></div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.22.2/swagger-ui-bundle.js"> </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.22.2/swagger-ui-standalone-preset.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.22.2/swagger-ui-bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swagger-ui/3.22.2/swagger-ui-standalone-preset.js"></script>
     <script>
-    window.onload = function() {
-      // Begin Swagger UI call region
-      const ui = SwaggerUIBundle({
-        url: "./apischema.json", // Path to the generated schema JSON file
-        dom_id: '#swagger-ui',
-        deepLinking: true,
-        presets: [
-          SwaggerUIBundle.presets.apis,
-          SwaggerUIStandalonePreset
-        ],
-        plugins: [
-          SwaggerUIBundle.plugins.DownloadUrl
-        ],
-        layout: "StandaloneLayout"
-      })
-      // End Swagger UI call region
-      window.ui = ui
-    }
-  </script>
+      window.onload = function () {
+        // Begin Swagger UI call region
+        const ui = SwaggerUIBundle({
+          url: './apischema.json', // Path to the generated schema JSON file
+          dom_id: '#swagger-ui',
+          deepLinking: true,
+          presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
+          plugins: [SwaggerUIBundle.plugins.DownloadUrl],
+          layout: 'StandaloneLayout',
+        });
+        // End Swagger UI call region
+        window.ui = ui;
+      };
+    </script>
   </body>
 </html>
 ```

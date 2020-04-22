@@ -1,24 +1,31 @@
 const mapType = require('./mapType');
 const bakeRef = require('./bakeRef');
 
-function field2JSON ({
-  type,
-  comment: description,
-  repeated,
-}) {
+function field2JSON({ message, type, comment: description, repeated }) {
   const mappedType = mapType(type);
-  const schema = mappedType ? {
-    type: mappedType,
-    description
-  } : {
-    $ref: bakeRef(type)
-  };
+  let schema;
+  if (mappedType) {
+    schema = {
+      type: mappedType,
+      description,
+    };
+  } else {
+    let parent = message;
+    while ((parent = parent.parent) && parent.name) {
+      type = `${parent.name}.${type}`;
+    }
+    schema = {
+      $ref: bakeRef(type),
+    };
+  }
 
-  return repeated ? {
-    type: 'array',
-    items: schema,
-    description
-  } : schema;
+  return repeated
+    ? {
+        type: 'array',
+        items: schema,
+        description,
+      }
+    : schema;
 }
 
 module.exports = field2JSON;
