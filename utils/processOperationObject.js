@@ -8,12 +8,15 @@ function processOperationObject(obj) {
   // parameters
   if (obj && Array.isArray(obj.parameters)) {
     obj.parameters.forEach(({ $proto }, i) => {
-      if (!$proto) { return; }
+      if (!$proto) {
+        return;
+      }
       ret.parameters[i] = {
-        $ref: bakeRef($proto)
+        $ref: bakeRef($proto),
       };
     });
   }
+
   // requestBody
   const reqProto = obj && obj.requestBody && obj.requestBody.$proto;
   if (reqProto) {
@@ -34,10 +37,10 @@ function bakeContent(protobufName) {
     content: {
       [JSON_META_TYPE]: {
         schema: {
-          $ref: bakeRef(protobufName)
-        }
-      }
-    }
+          $ref: bakeRef(protobufName),
+        },
+      },
+    },
   };
 }
 

@@ -66,6 +66,29 @@ module.exports = {
             $proto: 'GetDataResponse', // Tell me the protobuf message name
           },
         },
+        // or customize
+        post: {
+          requestBody: {
+            content: {
+              'application/json': {
+                schema: {
+                  $ref: '#/components/schemas/GetDataRequest'
+                }
+              }
+            }
+          },
+          responses: {
+            '200': {
+              content: {
+                'application/json': {
+                  schema: {
+                    $ref: '#/components/schemas/GetDataResponse'
+                  }
+                }
+              }
+            }
+          }
+        }
       },
     },
     components: {
