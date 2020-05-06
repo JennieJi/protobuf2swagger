@@ -27,7 +27,7 @@ async function convert({ file, files, customSchema }) {
   return {
     ...customSchema,
     openapi: OPENAPI_VERSION,
-    paths: processPaths(rawPaths),
+    paths: processPaths(rawPaths, schemas),
     components: {
       ...(rawComponents || {}),
       schemas,

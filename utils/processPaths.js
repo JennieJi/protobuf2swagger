@@ -11,7 +11,7 @@ const OPERATIONS = [
   'trace',
 ];
 
-function processPaths(paths) {
+function processPaths(paths, schemas) {
   return Object.keys(paths).reduce((updatedPaths, route) => {
     const raw = paths[route];
     const { operationId, summary } = raw;
@@ -20,7 +20,7 @@ function processPaths(paths) {
       return rawOperation
         ? {
             ...ret,
-            [operation]: processOperationObject(rawOperation),
+            [operation]: processOperationObject(rawOperation, schemas),
           }
         : ret;
     }, {});
