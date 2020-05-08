@@ -20,7 +20,10 @@ function processPaths(paths, schemas) {
       return rawOperation
         ? {
             ...ret,
-            [operation]: processOperationObject(rawOperation, schemas),
+            [operation]: {
+              ...ret[operation],
+              ...processOperationObject(rawOperation, schemas),
+            },
           }
         : ret;
     }, {});
