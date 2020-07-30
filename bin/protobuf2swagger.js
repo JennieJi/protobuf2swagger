@@ -3,11 +3,12 @@
 
 const path = require('path');
 const program = require('commander');
+const pkg = require('../package.json');
 const fs = require('fs');
-const convert = require('../utils/convert.js');
+const convert = require('../lib/convert.js');
 
 program
-  .version('0.0.0', '-v --version')
+  .version(pkg.version, '-v --version')
   .arguments('[config_file]')
   .usage('[config_file]')
   .on('--help', () => {
@@ -22,6 +23,9 @@ const [configPath] = program.args;
 const cwd = process.cwd();
 const DEFAULT_CONFIG_PATH = 'protobuf2swagger.config.js';
 const config = require(path.resolve(cwd, configPath || DEFAULT_CONFIG_PATH));
+if (config.file) {
+  config.files = config.files ? [config.file, ...config.files] : [config.file];
+}
 
 (async () => {
   const content = await convert(config);

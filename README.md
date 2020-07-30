@@ -7,13 +7,10 @@ Then you may render it easily with [SwaggerUI](https://github.com/swagger-api/sw
 
 # What is supported
 
+- customSchema in OAS v2 or v3 formats
+- convert _service_ to paths
 - convert _enum_, _message_ into components, paths will reference to the components schema
 - basic types mapping to JS type _number_, _string_, _boolean_ ( long types will be mapped to _string_)
-- recognize fields:
-  - [OperationObject](https://swagger.io/specification/#operationObject).requestBody.\$proto  
-    Replace requestBody with a [Reference Object](https://swagger.io/specification/#referenceObject)
-  - [OperationObject](https://swagger.io/specification/#operationObject).responses.\$proto  
-    Replace responses['200'] with a [Reference Object](https://swagger.io/specification/#referenceObject)
 
 # Install
 
@@ -35,60 +32,23 @@ Example:
 
 ```javascript
 module.exports = {
-  file: 'test.proto',
-  // or multiple files
   files: ['test1.proto', 'test2.proto'],
   dist: 'apischema.json',
+  formatServicePath: (path) => path.replace(/\./g, '/'),
   customSchema: {
-    // Similar to openapi v3 format
-    info: {
-      title: 'API',
-      version: '1.0.0',
-      contact: {
-        name: 'Jennie Ji',
-        email: 'jennie.ji@hotmail.com',
-        url: 'jennieji.github.io',
-      },
-    },
-    tags: [
-      {
-        name: 'test',
-        description: '',
-      },
-    ],
+    swagger: '2.0',
     paths: {
       '/api/test': {
         get: {
-          requestBody: {
-            $proto: 'GetDataRequest', // Tell me the protobuf message name
-          },
-          responses: {
-            $proto: 'GetDataResponse', // Tell me the protobuf message name
-          },
-        },
-        // or customize
-        post: {
-          requestBody: {
-            content: {
-              'application/json': {
-                schema: {
-                  $ref: '#/components/schemas/GetDataRequest'
-                }
-              }
-            }
-          },
           responses: {
             '200': {
-              content: {
-                'application/json': {
-                  schema: {
-                    $ref: '#/components/schemas/GetDataResponse'
-                  }
-                }
-              }
-            }
-          }
-        }
+              schema: {
+                $ref: 'GetDataResponse', // Tell me the protobuf message name
+              },
+            },
+          },
+          params: [],
+        },
       },
     },
     components: {
