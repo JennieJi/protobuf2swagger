@@ -3,11 +3,12 @@
 
 const path = require('path');
 const program = require('commander');
+const pkg = require('../package.json');
 const fs = require('fs');
 const convert = require('../lib/convert.js');
 
 program
-  .version('0.0.0', '-v --version')
+  .version(pkg.version, '-v --version')
   .arguments('[config_file]')
   .usage('[config_file]')
   .on('--help', () => {
