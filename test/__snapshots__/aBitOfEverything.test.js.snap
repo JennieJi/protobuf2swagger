@@ -1,0 +1,855 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`a bit of everything can work 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested.DeepEnum": Object {
+        "description": "0 - FALSE // FALSE is false.<br/>1 - TRUE // TRUE is true.",
+        "enum": Array [
+          0,
+          1,
+        ],
+        "type": "number",
+      },
+      "grpc.gateway.examples.internal.examplepb.ABitOfEverythingRepeated": Object {
+        "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
+        "properties": Object {
+          "pathRepeatedBoolValue": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "boolean",
+            },
+            "type": "array",
+          },
+          "pathRepeatedBytesValue": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedDoubleValue": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedEnumValue": Object {
+            "description": null,
+            "items": Object {
+              "$ref": "#/components/schemas/NumericEnum",
+            },
+            "type": "array",
+          },
+          "pathRepeatedFixed32Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedFixed64Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedFloatValue": Object {
+            "description": "repeated values. they are comma-separated in path",
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedInt32Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedInt64Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSfixed32Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSfixed64Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSint32Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSint64Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedStringValue": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedUint32Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedUint64Value": Object {
+            "description": null,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "grpc.gateway.examples.internal.examplepb.Body": Object {
+        "description": null,
+        "properties": Object {
+          "name": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "grpc.gateway.examples.internal.examplepb.Book": Object {
+        "description": "An example resource type from AIP-123 used to test the behavior described in
+the CreateBookRequest message.
+
+See: https://google.aip.dev/123",
+        "properties": Object {
+          "createTime": Object {
+            "$ref": "#/components/schemas/google.protobuf.Timestamp",
+          },
+          "id": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "name": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "grpc.gateway.examples.internal.examplepb.CreateBookRequest": Object {
+        "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+        "properties": Object {
+          "book": Object {
+            "$ref": "#/components/schemas/Book",
+          },
+          "bookId": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "parent": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "grpc.gateway.examples.internal.examplepb.MessageWithBody": Object {
+        "description": null,
+        "properties": Object {
+          "data": Object {
+            "$ref": "#/components/schemas/Body",
+          },
+          "id": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "grpc.gateway.examples.internal.examplepb.NumericEnum": Object {
+        "description": "0 - ZERO // ZERO means 0<br/>1 - ONE // ONE means 1",
+        "enum": Array [
+          0,
+          1,
+        ],
+        "type": "number",
+      },
+      "grpc.gateway.examples.internal.examplepb.UpdateV2Request": Object {
+        "description": "UpdateV2Request request for update includes the message and the update mask",
+        "properties": Object {
+          "abe": Object {
+            "$ref": "#/components/schemas/ABitOfEverything",
+          },
+          "updateMask": Object {
+            "$ref": "#/components/schemas/google.protobuf.FieldMask",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+    },
+  },
+  "info": Object {
+    "description": null,
+    "title": "a_bit_of_everything",
+    "verion": "1",
+  },
+  "openapi": "3.0.3",
+  "paths": Object {
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/CheckExternalNestedPathEnum": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.CheckExternalNestedPathEnum",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/CheckExternalPathEnum": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.CheckExternalPathEnum",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/CheckGetQueryParams": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.CheckGetQueryParams",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverything",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/CheckNestedEnumGetQueryParams": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.CheckNestedEnumGetQueryParams",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverything",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/CheckPostQueryParams": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.CheckPostQueryParams",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverything",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/Create": Object {
+      "post": Object {
+        "description": "Create a new ABitOfEverything
+
+This API creates a new ABitOfEverything",
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.Create",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverything",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/CreateBody": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.CreateBody",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverything",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/CreateBook": Object {
+      "post": Object {
+        "description": "Create a book.",
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.CreateBook",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.CreateBookRequest",
+              },
+            },
+          },
+          "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/Book",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/DeepPathEcho": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.DeepPathEcho",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverything",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/Delete": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.Delete",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/Echo": Object {
+      "post": Object {
+        "description": "Echo allows posting a StringMessage value.
+
+It also exposes multiple bindings.
+
+This makes it useful when validating that the OpenAPI v2 API
+description exposes documentation correctly on all paths
+defined as additional_bindings in the proto.",
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.Echo",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/grpc.gateway.examples.internal.sub.StringMessage",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/ErrorWithDetails": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.ErrorWithDetails",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/GetMessageWithBody": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.GetMessageWithBody",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.MessageWithBody",
+              },
+            },
+          },
+          "description": null,
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/GetQuery": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.GetQuery",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/GetRepeatedQuery": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.GetRepeatedQuery",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverythingRepeated",
+              },
+            },
+          },
+          "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverythingRepeated",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/Lookup": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.Lookup",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/ABitOfEverything",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/NoBindings": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.NoBindings",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/OverwriteResponseContentType": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.OverwriteResponseContentType",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.StringValue",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/PostWithEmptyBody": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.PostWithEmptyBody",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Body",
+              },
+            },
+          },
+          "description": null,
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/Timeout": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.Timeout",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/Update": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.Update",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything",
+              },
+            },
+          },
+          "description": "Intentionally complicated message type to cover many features of Protobuf.",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.ABitOfEverythingService/UpdateV2": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.ABitOfEverythingService.UpdateV2",
+        "parameters": Array [],
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.UpdateV2Request",
+              },
+            },
+          },
+          "description": "UpdateV2Request request for update includes the message and the update mask",
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.AnotherServiceWithNoBindings/NoBindings": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.AnotherServiceWithNoBindings.NoBindings",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+    "/grpc.gateway.examples.internal.examplepb.camelCaseServiceName/Empty": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "grpc.gateway.examples.internal.examplepb.camelCaseServiceName.Empty",
+        "parameters": Array [],
+        "requestBody": Object {},
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "application/json": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/google.protobuf.Empty",
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+}
+`;
