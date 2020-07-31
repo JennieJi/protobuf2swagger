@@ -261,7 +261,7 @@ See: https://google.aip.dev/133#user-specified-ids",
   "info": Object {
     "description": null,
     "title": "a_bit_of_everything",
-    "verion": "1",
+    "version": "1",
   },
   "openapi": "3.0.3",
   "paths": Object {
