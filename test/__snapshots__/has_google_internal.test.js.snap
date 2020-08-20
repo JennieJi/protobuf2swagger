@@ -27,7 +27,7 @@ Object {
             "format": "",
             "type": "string",
           },
-          "updateMask": Object {
+          "update_mask": Object {
             "$ref": "#/components/schemas/google.protobuf.FieldMask",
           },
         },
@@ -73,7 +73,7 @@ Object {
           "format": "",
           "type": "string",
         },
-        "updateMask": Object {
+        "update_mask": Object {
           "$ref": "#/definitions/google.protobuf.FieldMask",
         },
       },
