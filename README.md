@@ -9,8 +9,9 @@ Then you may render it easily with [SwaggerUI](https://github.com/swagger-api/sw
 
 - customSchema in OAS v2 or v3 formats
 - convert _service_ to paths
-- convert _enum_, _message_ into components, paths will reference to the components schema
+- convert _enum_, _message_ to schemas in components/definitions, paths will reference to them
 - basic types mapping to JS type _number_, _string_, _boolean_ ( long types will be mapped to _string_)
+- __nested__, __repeated__ types
 
 # Install
 
