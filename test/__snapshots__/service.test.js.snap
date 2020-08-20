@@ -1,0 +1,230 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`service can work 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "service.Body": Object {
+        "properties": Object {
+          "name": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "service.Book": Object {
+        "description": "An example resource type from AIP-123 used to test the behavior described in
+the CreateBookRequest message.
+
+See: https://google.aip.dev/123",
+        "properties": Object {
+          "id": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "name": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "service.CreateBookRequest": Object {
+        "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+        "properties": Object {
+          "book": Object {
+            "$ref": "#/components/schemas/service.Book",
+          },
+          "bookId": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "parent": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "service.MessageWithBody": Object {
+        "properties": Object {
+          "data": Object {
+            "$ref": "#/components/schemas/service.Body",
+          },
+          "id": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "service",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {
+    "/service.ABitOfEverythingService/test": Object {
+      "post": Object {
+        "operationId": "service.ABitOfEverythingService.test",
+        "parameters": Object {
+          "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+          "in": "body",
+          "name": "body",
+          "required": true,
+          "schema": Object {
+            "$ref": "#/components/schemas/service.CreateBookRequest",
+          },
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "*/*": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/service.MessageWithBody",
+                },
+              },
+            },
+            "description": "",
+          },
+        },
+      },
+    },
+  },
+}
+`;
+
+exports[`service swagger v2 1`] = `
+Object {
+  "definitions": Object {
+    "service.Body": Object {
+      "description": null,
+      "properties": Object {
+        "name": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+    "service.Book": Object {
+      "description": "An example resource type from AIP-123 used to test the behavior described in
+the CreateBookRequest message.
+
+See: https://google.aip.dev/123",
+      "properties": Object {
+        "id": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+        "name": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+    "service.CreateBookRequest": Object {
+      "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+      "properties": Object {
+        "book": Object {
+          "$ref": "#/definitions/service.Book",
+        },
+        "bookId": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+        "parent": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+    "service.MessageWithBody": Object {
+      "description": null,
+      "properties": Object {
+        "data": Object {
+          "$ref": "#/definitions/service.Body",
+        },
+        "id": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "service",
+    "version": "1",
+  },
+  "paths": Object {
+    "/service.ABitOfEverythingService/test": Object {
+      "post": Object {
+        "description": null,
+        "operationId": "service.ABitOfEverythingService.test",
+        "parameters": Object {
+          "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+          "in": "body",
+          "name": "body",
+          "required": true,
+          "schema": Object {
+            "$ref": "#/definitions/service.CreateBookRequest",
+          },
+        },
+        "responses": Object {
+          "200": Object {
+            "description": "",
+            "schema": Object {
+              "$ref": "#/definitions/service.MessageWithBody",
+            },
+          },
+        },
+      },
+    },
+  },
+  "swagger": "2.0",
+}
+`;

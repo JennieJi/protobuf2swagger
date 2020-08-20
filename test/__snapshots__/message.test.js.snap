@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`message can work 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "message.Book": Object {
+        "description": "An example resource type from AIP-123 used to test the behavior described in
+the CreateBookRequest message.
+
+See: https://google.aip.dev/123",
+        "properties": Object {
+          "id": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "name": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "message",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {},
+}
+`;
+
+exports[`message swagger v2 1`] = `
+Object {
+  "definitions": Object {
+    "message.Book": Object {
+      "description": "An example resource type from AIP-123 used to test the behavior described in
+the CreateBookRequest message.
+
+See: https://google.aip.dev/123",
+      "properties": Object {
+        "id": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+        "name": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "message",
+    "version": "1",
+  },
+  "paths": Object {},
+  "swagger": "2.0",
+}
+`;

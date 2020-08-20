@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`enum can work 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "examplepb.NumericEnum": Object {
+        "description": "0 - ZERO // ZERO means 0
+1 - ONE // ONE means 1",
+        "enum": Array [
+          0,
+          1,
+        ],
+        "type": "number",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "enum",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {},
+}
+`;
+
+exports[`enum swagger v2 1`] = `
+Object {
+  "definitions": Object {
+    "examplepb.NumericEnum": Object {
+      "description": "0 - ZERO // ZERO means 0
+1 - ONE // ONE means 1",
+      "enum": Array [
+        0,
+        1,
+      ],
+      "type": "number",
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "enum",
+    "version": "1",
+  },
+  "paths": Object {},
+  "swagger": "2.0",
+}
+`;
