@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`has_google_internal can work 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "google.protobuf.FieldMask": Object {
+        "properties": Object {
+          "paths": Object {
+            "description": undefined,
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "has_google_internal.UpdateV2Request": Object {
+        "description": "UpdateV2Request request for update includes the message and the update mask",
+        "properties": Object {
+          "abe": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "updateMask": Object {
+            "$ref": "#/components/schemas/google.protobuf.FieldMask",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "has_google_internal",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {},
+}
+`;
+
+exports[`has_google_internal swagger v2 1`] = `
+Object {
+  "definitions": Object {
+    "google.protobuf.FieldMask": Object {
+      "description": null,
+      "properties": Object {
+        "paths": Object {
+          "description": undefined,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+    "has_google_internal.UpdateV2Request": Object {
+      "description": "UpdateV2Request request for update includes the message and the update mask",
+      "properties": Object {
+        "abe": Object {
+          "default": null,
+          "format": "",
+          "type": "string",
+        },
+        "updateMask": Object {
+          "$ref": "#/definitions/google.protobuf.FieldMask",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "has_google_internal",
+    "version": "1",
+  },
+  "paths": Object {},
+  "swagger": "2.0",
+}
+`;

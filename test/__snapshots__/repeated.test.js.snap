@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`repeated can work 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "repeated.ABitOfEverythingRepeated": Object {
+        "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
+        "properties": Object {
+          "pathRepeatedBoolValue": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "boolean",
+            },
+            "type": "array",
+          },
+          "pathRepeatedBytesValue": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedDoubleValue": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedEnumValue": Object {
+            "items": Object {
+              "$ref": "#/components/schemas/repeated.NumericEnum",
+            },
+            "type": "array",
+          },
+          "pathRepeatedFixed32Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedFixed64Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedFloatValue": Object {
+            "description": "repeated values. they are comma-separated in path",
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedInt32Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedInt64Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSfixed32Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSfixed64Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSint32Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedSint64Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedStringValue": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+          "pathRepeatedUint32Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "number",
+            },
+            "type": "array",
+          },
+          "pathRepeatedUint64Value": Object {
+            "items": Object {
+              "default": null,
+              "format": "",
+              "type": "string",
+            },
+            "type": "array",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+      "repeated.NumericEnum": Object {
+        "description": "0 - ZERO // ZERO means 0
+1 - ONE // ONE means 1",
+        "enum": Array [
+          0,
+          1,
+        ],
+        "type": "number",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "repeated",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {},
+}
+`;
+
+exports[`repeated swagger v2 1`] = `
+Object {
+  "definitions": Object {
+    "repeated.ABitOfEverythingRepeated": Object {
+      "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
+      "properties": Object {
+        "pathRepeatedBoolValue": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "boolean",
+          },
+          "type": "array",
+        },
+        "pathRepeatedBytesValue": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "pathRepeatedDoubleValue": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "pathRepeatedEnumValue": Object {
+          "description": null,
+          "items": Object {
+            "$ref": "#/definitions/repeated.NumericEnum",
+          },
+          "type": "array",
+        },
+        "pathRepeatedFixed32Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "number",
+          },
+          "type": "array",
+        },
+        "pathRepeatedFixed64Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "pathRepeatedFloatValue": Object {
+          "description": "repeated values. they are comma-separated in path",
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "number",
+          },
+          "type": "array",
+        },
+        "pathRepeatedInt32Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "number",
+          },
+          "type": "array",
+        },
+        "pathRepeatedInt64Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "pathRepeatedSfixed32Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "number",
+          },
+          "type": "array",
+        },
+        "pathRepeatedSfixed64Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "pathRepeatedSint32Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "number",
+          },
+          "type": "array",
+        },
+        "pathRepeatedSint64Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "pathRepeatedStringValue": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+        "pathRepeatedUint32Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "number",
+          },
+          "type": "array",
+        },
+        "pathRepeatedUint64Value": Object {
+          "description": null,
+          "items": Object {
+            "default": null,
+            "format": "",
+            "type": "string",
+          },
+          "type": "array",
+        },
+      },
+      "required": Array [],
+      "type": "object",
+    },
+    "repeated.NumericEnum": Object {
+      "description": "0 - ZERO // ZERO means 0
+1 - ONE // ONE means 1",
+      "enum": Array [
+        0,
+        1,
+      ],
+      "type": "number",
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "repeated",
+    "version": "1",
+  },
+  "paths": Object {},
+  "swagger": "2.0",
+}
+`;

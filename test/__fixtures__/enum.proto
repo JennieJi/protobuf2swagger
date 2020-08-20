@@ -1,0 +1,10 @@
+syntax = "proto3";
+package examplepb;
+
+// NumericEnum is one or zero.
+enum NumericEnum {
+	// ZERO means 0
+	ZERO = 0;
+	// ONE means 1
+	ONE = 1;
+}

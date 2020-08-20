@@ -1,0 +1,18 @@
+syntax = "proto3";
+package message;
+
+// An example resource type from AIP-123 used to test the behavior described in
+// the CreateBookRequest message.
+//
+// See: https://google.aip.dev/123
+message Book {
+	// The resource name of the book.
+	//
+	// Format: `publishers/{publisher}/books/{book}`
+	//
+	// Example: `publishers/1257894000000000000/books/my-book`
+	string name = 1;
+
+	// Output only. The book's ID.
+	string id = 2;
+}
