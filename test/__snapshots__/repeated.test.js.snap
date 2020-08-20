@@ -18,7 +18,7 @@ Object {
           "path_repeated_bytes_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "byte",
               "type": "string",
             },
             "type": "array",
@@ -26,7 +26,7 @@ Object {
           "path_repeated_double_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "double",
               "type": "string",
             },
             "type": "array",
@@ -40,7 +40,7 @@ Object {
           "path_repeated_fixed32_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int32",
               "type": "number",
             },
             "type": "array",
@@ -48,7 +48,7 @@ Object {
           "path_repeated_fixed64_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int64",
               "type": "string",
             },
             "type": "array",
@@ -57,7 +57,7 @@ Object {
             "description": "repeated values. they are comma-separated in path",
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "float",
               "type": "number",
             },
             "type": "array",
@@ -65,7 +65,7 @@ Object {
           "path_repeated_int32_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int32",
               "type": "number",
             },
             "type": "array",
@@ -73,7 +73,7 @@ Object {
           "path_repeated_int64_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int64",
               "type": "string",
             },
             "type": "array",
@@ -81,7 +81,7 @@ Object {
           "path_repeated_sfixed32_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int32",
               "type": "number",
             },
             "type": "array",
@@ -89,7 +89,7 @@ Object {
           "path_repeated_sfixed64_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int64",
               "type": "string",
             },
             "type": "array",
@@ -97,7 +97,7 @@ Object {
           "path_repeated_sint32_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int32",
               "type": "number",
             },
             "type": "array",
@@ -105,7 +105,7 @@ Object {
           "path_repeated_sint64_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int64",
               "type": "string",
             },
             "type": "array",
@@ -121,7 +121,7 @@ Object {
           "path_repeated_uint32_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int32",
               "type": "number",
             },
             "type": "array",
@@ -129,7 +129,7 @@ Object {
           "path_repeated_uint64_value": Object {
             "items": Object {
               "default": null,
-              "format": "",
+              "format": "int64",
               "type": "string",
             },
             "type": "array",
@@ -178,7 +178,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "byte",
             "type": "string",
           },
           "type": "array",
@@ -187,7 +187,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "double",
             "type": "string",
           },
           "type": "array",
@@ -203,7 +203,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "type": "array",
@@ -212,7 +212,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "type": "array",
@@ -221,7 +221,7 @@ Object {
           "description": "repeated values. they are comma-separated in path",
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "float",
             "type": "number",
           },
           "type": "array",
@@ -230,7 +230,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "type": "array",
@@ -239,7 +239,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "type": "array",
@@ -248,7 +248,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "type": "array",
@@ -257,7 +257,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "type": "array",
@@ -266,7 +266,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "type": "array",
@@ -275,7 +275,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "type": "array",
@@ -293,7 +293,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "type": "array",
@@ -302,7 +302,7 @@ Object {
           "description": null,
           "items": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "type": "array",
