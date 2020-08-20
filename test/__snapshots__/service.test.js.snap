@@ -45,7 +45,7 @@ See: https://google.aip.dev/133#user-specified-ids",
           "book": Object {
             "$ref": "#/components/schemas/service.Book",
           },
-          "bookId": Object {
+          "book_id": Object {
             "default": null,
             "format": "",
             "type": "string",
@@ -161,7 +161,7 @@ See: https://google.aip.dev/133#user-specified-ids",
         "book": Object {
           "$ref": "#/definitions/service.Book",
         },
-        "bookId": Object {
+        "book_id": Object {
           "default": null,
           "format": "",
           "type": "string",

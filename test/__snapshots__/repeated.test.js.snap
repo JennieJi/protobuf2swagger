@@ -7,7 +7,7 @@ Object {
       "repeated.ABitOfEverythingRepeated": Object {
         "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
         "properties": Object {
-          "pathRepeatedBoolValue": Object {
+          "path_repeated_bool_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -15,7 +15,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedBytesValue": Object {
+          "path_repeated_bytes_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -23,7 +23,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedDoubleValue": Object {
+          "path_repeated_double_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -31,13 +31,13 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedEnumValue": Object {
+          "path_repeated_enum_value": Object {
             "items": Object {
               "$ref": "#/components/schemas/repeated.NumericEnum",
             },
             "type": "array",
           },
-          "pathRepeatedFixed32Value": Object {
+          "path_repeated_fixed32_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -45,7 +45,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedFixed64Value": Object {
+          "path_repeated_fixed64_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -53,7 +53,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedFloatValue": Object {
+          "path_repeated_float_value": Object {
             "description": "repeated values. they are comma-separated in path",
             "items": Object {
               "default": null,
@@ -62,7 +62,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedInt32Value": Object {
+          "path_repeated_int32_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -70,7 +70,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedInt64Value": Object {
+          "path_repeated_int64_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -78,7 +78,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedSfixed32Value": Object {
+          "path_repeated_sfixed32_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -86,7 +86,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedSfixed64Value": Object {
+          "path_repeated_sfixed64_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -94,7 +94,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedSint32Value": Object {
+          "path_repeated_sint32_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -102,7 +102,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedSint64Value": Object {
+          "path_repeated_sint64_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -110,7 +110,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedStringValue": Object {
+          "path_repeated_string_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -118,7 +118,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedUint32Value": Object {
+          "path_repeated_uint32_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -126,7 +126,7 @@ Object {
             },
             "type": "array",
           },
-          "pathRepeatedUint64Value": Object {
+          "path_repeated_uint64_value": Object {
             "items": Object {
               "default": null,
               "format": "",
@@ -165,7 +165,7 @@ Object {
     "repeated.ABitOfEverythingRepeated": Object {
       "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
       "properties": Object {
-        "pathRepeatedBoolValue": Object {
+        "path_repeated_bool_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -174,7 +174,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedBytesValue": Object {
+        "path_repeated_bytes_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -183,7 +183,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedDoubleValue": Object {
+        "path_repeated_double_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -192,14 +192,14 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedEnumValue": Object {
+        "path_repeated_enum_value": Object {
           "description": null,
           "items": Object {
             "$ref": "#/definitions/repeated.NumericEnum",
           },
           "type": "array",
         },
-        "pathRepeatedFixed32Value": Object {
+        "path_repeated_fixed32_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -208,7 +208,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedFixed64Value": Object {
+        "path_repeated_fixed64_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -217,7 +217,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedFloatValue": Object {
+        "path_repeated_float_value": Object {
           "description": "repeated values. they are comma-separated in path",
           "items": Object {
             "default": null,
@@ -226,7 +226,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedInt32Value": Object {
+        "path_repeated_int32_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -235,7 +235,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedInt64Value": Object {
+        "path_repeated_int64_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -244,7 +244,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedSfixed32Value": Object {
+        "path_repeated_sfixed32_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -253,7 +253,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedSfixed64Value": Object {
+        "path_repeated_sfixed64_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -262,7 +262,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedSint32Value": Object {
+        "path_repeated_sint32_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -271,7 +271,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedSint64Value": Object {
+        "path_repeated_sint64_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -280,7 +280,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedStringValue": Object {
+        "path_repeated_string_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -289,7 +289,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedUint32Value": Object {
+        "path_repeated_uint32_value": Object {
           "description": null,
           "items": Object {
             "default": null,
@@ -298,7 +298,7 @@ Object {
           },
           "type": "array",
         },
-        "pathRepeatedUint64Value": Object {
+        "path_repeated_uint64_value": Object {
           "description": null,
           "items": Object {
             "default": null,
