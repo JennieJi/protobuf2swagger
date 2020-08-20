@@ -14,37 +14,37 @@ Object {
           },
           "bytes_value": Object {
             "default": null,
-            "format": "",
+            "format": "byte",
             "type": "string",
           },
           "double_value": Object {
             "default": null,
-            "format": "",
+            "format": "double",
             "type": "string",
           },
           "fixed32_value": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "fixed64_value": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "float_value": Object {
             "default": null,
-            "format": "",
+            "format": "float",
             "type": "number",
           },
           "int32_value": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "int64_value": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "nested": Object {
@@ -66,12 +66,12 @@ Object {
           },
           "sfixed32_value": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "sfixed64_value": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "single_nested": Object {
@@ -79,12 +79,12 @@ Object {
           },
           "sint32_value": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "sint64_value": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "string_value": Object {
@@ -94,12 +94,12 @@ Object {
           },
           "uint32_value": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "uint64_value": Object {
             "default": null,
-            "format": "",
+            "format": "int64",
             "type": "string",
           },
           "uuid": Object {
@@ -116,7 +116,7 @@ Object {
         "properties": Object {
           "amount": Object {
             "default": null,
-            "format": "",
+            "format": "int32",
             "type": "number",
           },
           "name": Object {
@@ -165,37 +165,37 @@ Object {
         },
         "bytes_value": Object {
           "default": null,
-          "format": "",
+          "format": "byte",
           "type": "string",
         },
         "double_value": Object {
           "default": null,
-          "format": "",
+          "format": "double",
           "type": "string",
         },
         "fixed32_value": Object {
           "default": null,
-          "format": "",
+          "format": "int32",
           "type": "number",
         },
         "fixed64_value": Object {
           "default": null,
-          "format": "",
+          "format": "int64",
           "type": "string",
         },
         "float_value": Object {
           "default": null,
-          "format": "",
+          "format": "float",
           "type": "number",
         },
         "int32_value": Object {
           "default": null,
-          "format": "",
+          "format": "int32",
           "type": "number",
         },
         "int64_value": Object {
           "default": null,
-          "format": "",
+          "format": "int64",
           "type": "string",
         },
         "nested": Object {
@@ -219,12 +219,12 @@ Object {
         },
         "sfixed32_value": Object {
           "default": null,
-          "format": "",
+          "format": "int32",
           "type": "number",
         },
         "sfixed64_value": Object {
           "default": null,
-          "format": "",
+          "format": "int64",
           "type": "string",
         },
         "single_nested": Object {
@@ -232,12 +232,12 @@ Object {
         },
         "sint32_value": Object {
           "default": null,
-          "format": "",
+          "format": "int32",
           "type": "number",
         },
         "sint64_value": Object {
           "default": null,
-          "format": "",
+          "format": "int64",
           "type": "string",
         },
         "string_value": Object {
@@ -247,12 +247,12 @@ Object {
         },
         "uint32_value": Object {
           "default": null,
-          "format": "",
+          "format": "int32",
           "type": "number",
         },
         "uint64_value": Object {
           "default": null,
-          "format": "",
+          "format": "int64",
           "type": "string",
         },
         "uuid": Object {
@@ -269,7 +269,7 @@ Object {
       "properties": Object {
         "amount": Object {
           "default": null,
-          "format": "",
+          "format": "int32",
           "type": "number",
         },
         "name": Object {
