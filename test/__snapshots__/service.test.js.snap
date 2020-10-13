@@ -7,8 +7,6 @@ Object {
       "service.Body": Object {
         "properties": Object {
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -22,13 +20,9 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
         "properties": Object {
           "id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -46,13 +40,9 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/service.Book",
           },
           "book_id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "parent": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -65,8 +55,6 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/service.Body",
           },
           "id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -123,8 +111,6 @@ Object {
       "description": null,
       "properties": Object {
         "name": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
       },
@@ -138,13 +124,9 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
       "properties": Object {
         "id": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
         "name": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
       },
@@ -162,13 +144,9 @@ See: https://google.aip.dev/133#user-specified-ids",
           "$ref": "#/definitions/service.Book",
         },
         "book_id": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
         "parent": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
       },
@@ -182,8 +160,6 @@ See: https://google.aip.dev/133#user-specified-ids",
           "$ref": "#/definitions/service.Body",
         },
         "id": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
       },

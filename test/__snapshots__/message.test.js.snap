@@ -11,13 +11,9 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
         "properties": Object {
           "id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -46,13 +42,9 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
       "properties": Object {
         "id": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
         "name": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
       },

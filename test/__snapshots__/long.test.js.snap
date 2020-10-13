@@ -1,0 +1,141 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`long string by default 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "long.ABitOfEverything": Object {
+        "properties": Object {
+          "double_value": Object {
+            "format": "double",
+            "type": "string",
+          },
+          "fixed32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "fixed64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "float_value": Object {
+            "format": "float",
+            "type": "number",
+          },
+          "int32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "int64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "sfixed32_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+          "sfixed64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "sint32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "sint64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+          "uint32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "uint64_value": Object {
+            "format": "int64",
+            "type": "string",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "long",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {},
+}
+`;
+
+exports[`long use option to change to integer 1`] = `
+Object {
+  "components": Object {
+    "schemas": Object {
+      "long.ABitOfEverything": Object {
+        "properties": Object {
+          "double_value": Object {
+            "format": "double",
+            "type": "number",
+          },
+          "fixed32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "fixed64_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+          "float_value": Object {
+            "format": "float",
+            "type": "number",
+          },
+          "int32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "int64_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+          "sfixed32_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+          "sfixed64_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+          "sint32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "sint64_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+          "uint32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
+          "uint64_value": Object {
+            "format": "int64",
+            "type": "integer",
+          },
+        },
+        "required": Array [],
+        "type": "object",
+      },
+    },
+  },
+  "info": Object {
+    "description": "",
+    "title": "long",
+    "version": "1",
+  },
+  "openapi": "3.0.0",
+  "paths": Object {},
+}
+`;

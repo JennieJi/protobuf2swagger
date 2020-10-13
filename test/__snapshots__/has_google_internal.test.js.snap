@@ -9,8 +9,6 @@ Object {
           "paths": Object {
             "description": undefined,
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
@@ -23,8 +21,6 @@ Object {
         "description": "UpdateV2Request request for update includes the message and the update mask",
         "properties": Object {
           "abe": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "update_mask": Object {
@@ -55,8 +51,6 @@ Object {
         "paths": Object {
           "description": undefined,
           "items": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "type": "array",
@@ -69,8 +63,6 @@ Object {
       "description": "UpdateV2Request request for update includes the message and the update mask",
       "properties": Object {
         "abe": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
         "update_mask": Object {

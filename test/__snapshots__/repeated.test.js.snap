@@ -9,15 +9,12 @@ Object {
         "properties": Object {
           "path_repeated_bool_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "boolean",
             },
             "type": "array",
           },
           "path_repeated_bytes_value": Object {
             "items": Object {
-              "default": null,
               "format": "byte",
               "type": "string",
             },
@@ -25,7 +22,6 @@ Object {
           },
           "path_repeated_double_value": Object {
             "items": Object {
-              "default": null,
               "format": "double",
               "type": "string",
             },
@@ -39,15 +35,13 @@ Object {
           },
           "path_repeated_fixed32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_fixed64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
               "type": "string",
             },
@@ -56,7 +50,6 @@ Object {
           "path_repeated_float_value": Object {
             "description": "repeated values. they are comma-separated in path",
             "items": Object {
-              "default": null,
               "format": "float",
               "type": "number",
             },
@@ -64,15 +57,13 @@ Object {
           },
           "path_repeated_int32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_int64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
               "type": "string",
             },
@@ -80,15 +71,13 @@ Object {
           },
           "path_repeated_sfixed32_value": Object {
             "items": Object {
-              "default": null,
-              "format": "int32",
-              "type": "number",
+              "format": "int64",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sfixed64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
               "type": "string",
             },
@@ -96,15 +85,13 @@ Object {
           },
           "path_repeated_sint32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sint64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
               "type": "string",
             },
@@ -112,23 +99,19 @@ Object {
           },
           "path_repeated_string_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "path_repeated_uint32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_uint64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
               "type": "string",
             },
@@ -168,8 +151,6 @@ Object {
         "path_repeated_bool_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
-            "format": "",
             "type": "boolean",
           },
           "type": "array",
@@ -177,7 +158,6 @@ Object {
         "path_repeated_bytes_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "byte",
             "type": "string",
           },
@@ -186,7 +166,6 @@ Object {
         "path_repeated_double_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "double",
             "type": "string",
           },
@@ -202,16 +181,14 @@ Object {
         "path_repeated_fixed32_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "type": "array",
         },
         "path_repeated_fixed64_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int64",
             "type": "string",
           },
@@ -220,7 +197,6 @@ Object {
         "path_repeated_float_value": Object {
           "description": "repeated values. they are comma-separated in path",
           "items": Object {
-            "default": null,
             "format": "float",
             "type": "number",
           },
@@ -229,16 +205,14 @@ Object {
         "path_repeated_int32_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "type": "array",
         },
         "path_repeated_int64_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int64",
             "type": "string",
           },
@@ -247,16 +221,14 @@ Object {
         "path_repeated_sfixed32_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
-            "format": "int32",
-            "type": "number",
+            "format": "int64",
+            "type": "integer",
           },
           "type": "array",
         },
         "path_repeated_sfixed64_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int64",
             "type": "string",
           },
@@ -265,16 +237,14 @@ Object {
         "path_repeated_sint32_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "type": "array",
         },
         "path_repeated_sint64_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int64",
             "type": "string",
           },
@@ -283,8 +253,6 @@ Object {
         "path_repeated_string_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "type": "array",
@@ -292,16 +260,14 @@ Object {
         "path_repeated_uint32_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "type": "array",
         },
         "path_repeated_uint64_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
             "format": "int64",
             "type": "string",
           },
