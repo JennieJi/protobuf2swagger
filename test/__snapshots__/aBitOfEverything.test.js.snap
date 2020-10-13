@@ -8,19 +8,15 @@ Object {
         "description": "Intentionally complicated message type to cover many features of Protobuf.",
         "properties": Object {
           "bool_value": Object {
-            "default": null,
-            "format": "",
             "type": "boolean",
           },
           "bytes_value": Object {
-            "default": null,
             "format": "byte",
             "type": "string",
           },
           "double_value": Object {
-            "default": null,
             "format": "double",
-            "type": "string",
+            "type": "number",
           },
           "enum_value": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
@@ -29,34 +25,28 @@ Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
           },
           "fixed32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "fixed64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "float_value": Object {
-            "default": null,
             "format": "float",
             "type": "number",
           },
           "int32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "int64_override_type": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "int64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "map_value": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
@@ -65,8 +55,6 @@ Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested",
           },
           "mapped_string_value": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "nested": Object {
@@ -80,14 +68,10 @@ Object {
           },
           "nested_path_enum_value": Object {},
           "nonConventionalNameValue": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "oneof_empty": Object {},
           "oneof_string": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "path_enum_value": Object {},
@@ -115,62 +99,48 @@ Object {
           "repeated_string_annotation": Object {
             "description": "repeated string comment (This comment is overridden by the field annotation)",
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "repeated_string_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "sfixed32_value": Object {
-            "default": null,
-            "format": "int32",
-            "type": "number",
+            "format": "int64",
+            "type": "integer",
           },
           "sfixed64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "single_nested": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested",
           },
           "sint32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "sint64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "string_value": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "timestamp_value": Object {},
           "uint32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "uint64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "uuid": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -181,13 +151,10 @@ Object {
         "description": "Nested is nested type.",
         "properties": Object {
           "amount": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "ok": Object {
@@ -211,15 +178,12 @@ Object {
         "properties": Object {
           "path_repeated_bool_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "boolean",
             },
             "type": "array",
           },
           "path_repeated_bytes_value": Object {
             "items": Object {
-              "default": null,
               "format": "byte",
               "type": "string",
             },
@@ -227,9 +191,8 @@ Object {
           },
           "path_repeated_double_value": Object {
             "items": Object {
-              "default": null,
               "format": "double",
-              "type": "string",
+              "type": "number",
             },
             "type": "array",
           },
@@ -241,24 +204,21 @@ Object {
           },
           "path_repeated_fixed32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_fixed64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_float_value": Object {
             "description": "repeated values. they are comma-separated in path",
             "items": Object {
-              "default": null,
               "format": "float",
               "type": "number",
             },
@@ -266,73 +226,63 @@ Object {
           },
           "path_repeated_int32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_int64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sfixed32_value": Object {
             "items": Object {
-              "default": null,
-              "format": "int32",
-              "type": "number",
+              "format": "int64",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sfixed64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sint32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sint64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_string_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "path_repeated_uint32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_uint64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
@@ -343,8 +293,6 @@ Object {
       "grpc.gateway.examples.internal.examplepb.Body": Object {
         "properties": Object {
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -359,13 +307,9 @@ See: https://google.aip.dev/123",
         "properties": Object {
           "create_time": Object {},
           "id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -383,13 +327,9 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Book",
           },
           "book_id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "parent": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -402,8 +342,6 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Body",
           },
           "id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -959,19 +897,15 @@ Object {
         "description": "Intentionally complicated message type to cover many features of Protobuf.",
         "properties": Object {
           "bool_value": Object {
-            "default": null,
-            "format": "",
             "type": "boolean",
           },
           "bytes_value": Object {
-            "default": null,
             "format": "byte",
             "type": "string",
           },
           "double_value": Object {
-            "default": null,
             "format": "double",
-            "type": "string",
+            "type": "number",
           },
           "enum_value": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
@@ -980,34 +914,28 @@ Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
           },
           "fixed32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "fixed64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "float_value": Object {
-            "default": null,
             "format": "float",
             "type": "number",
           },
           "int32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "int64_override_type": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "int64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "map_value": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
@@ -1016,8 +944,6 @@ Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested",
           },
           "mapped_string_value": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "nested": Object {
@@ -1031,14 +957,10 @@ Object {
           },
           "nested_path_enum_value": Object {},
           "nonConventionalNameValue": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "oneof_empty": Object {},
           "oneof_string": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "path_enum_value": Object {},
@@ -1066,62 +988,48 @@ Object {
           "repeated_string_annotation": Object {
             "description": "repeated string comment (This comment is overridden by the field annotation)",
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "repeated_string_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "sfixed32_value": Object {
-            "default": null,
-            "format": "int32",
-            "type": "number",
+            "format": "int64",
+            "type": "integer",
           },
           "sfixed64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "single_nested": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested",
           },
           "sint32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "sint64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "string_value": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "timestamp_value": Object {},
           "uint32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "uint64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "uuid": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -1132,13 +1040,10 @@ Object {
         "description": "Nested is nested type.",
         "properties": Object {
           "amount": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "ok": Object {
@@ -1162,15 +1067,12 @@ Object {
         "properties": Object {
           "path_repeated_bool_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "boolean",
             },
             "type": "array",
           },
           "path_repeated_bytes_value": Object {
             "items": Object {
-              "default": null,
               "format": "byte",
               "type": "string",
             },
@@ -1178,9 +1080,8 @@ Object {
           },
           "path_repeated_double_value": Object {
             "items": Object {
-              "default": null,
               "format": "double",
-              "type": "string",
+              "type": "number",
             },
             "type": "array",
           },
@@ -1192,24 +1093,21 @@ Object {
           },
           "path_repeated_fixed32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_fixed64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_float_value": Object {
             "description": "repeated values. they are comma-separated in path",
             "items": Object {
-              "default": null,
               "format": "float",
               "type": "number",
             },
@@ -1217,73 +1115,63 @@ Object {
           },
           "path_repeated_int32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_int64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sfixed32_value": Object {
             "items": Object {
-              "default": null,
-              "format": "int32",
-              "type": "number",
+              "format": "int64",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sfixed64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sint32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_sint64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_string_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "path_repeated_uint32_value": Object {
             "items": Object {
-              "default": null,
               "format": "int32",
-              "type": "number",
+              "type": "integer",
             },
             "type": "array",
           },
           "path_repeated_uint64_value": Object {
             "items": Object {
-              "default": null,
               "format": "int64",
-              "type": "string",
+              "type": "integer",
             },
             "type": "array",
           },
@@ -1294,8 +1182,6 @@ Object {
       "grpc.gateway.examples.internal.examplepb.Body": Object {
         "properties": Object {
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -1310,13 +1196,9 @@ See: https://google.aip.dev/123",
         "properties": Object {
           "create_time": Object {},
           "id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -1334,13 +1216,9 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Book",
           },
           "book_id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "parent": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -1353,8 +1231,6 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Body",
           },
           "id": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },

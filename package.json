@@ -22,11 +22,11 @@
   "author": "Jennie Ji <jennie.ji@hotmail.com>",
   "license": "MIT",
   "dependencies": {
-    "commander": "^6.0.0",
+    "commander": "^6.1.0",
     "protobufjs": "^6.10.1",
-    "swagger2openapi": "^6.2.1"
+    "swagger2openapi": "^7.0.2"
   },
   "devDependencies": {
-    "jest": "^26.1.0"
+    "jest": "^26.5.3"
   }
 }

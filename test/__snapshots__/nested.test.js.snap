@@ -8,44 +8,35 @@ Object {
         "description": "Intentionally complicated message type to cover many features of Protobuf.",
         "properties": Object {
           "bool_value": Object {
-            "default": null,
-            "format": "",
             "type": "boolean",
           },
           "bytes_value": Object {
-            "default": null,
             "format": "byte",
             "type": "string",
           },
           "double_value": Object {
-            "default": null,
             "format": "double",
-            "type": "string",
-          },
-          "fixed32_value": Object {
-            "default": null,
-            "format": "int32",
             "type": "number",
           },
+          "fixed32_value": Object {
+            "format": "int32",
+            "type": "integer",
+          },
           "fixed64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "float_value": Object {
-            "default": null,
             "format": "float",
             "type": "number",
           },
           "int32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "int64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "nested": Object {
             "items": Object {
@@ -58,53 +49,41 @@ Object {
           },
           "repeated_string_value": Object {
             "items": Object {
-              "default": null,
-              "format": "",
               "type": "string",
             },
             "type": "array",
           },
           "sfixed32_value": Object {
-            "default": null,
-            "format": "int32",
-            "type": "number",
+            "format": "int64",
+            "type": "integer",
           },
           "sfixed64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "single_nested": Object {
             "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested",
           },
           "sint32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "sint64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "string_value": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "uint32_value": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "uint64_value": Object {
-            "default": null,
             "format": "int64",
-            "type": "string",
+            "type": "integer",
           },
           "uuid": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
         },
@@ -115,13 +94,10 @@ Object {
         "description": "Nested is nested type.",
         "properties": Object {
           "amount": Object {
-            "default": null,
             "format": "int32",
-            "type": "number",
+            "type": "integer",
           },
           "name": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "ok": Object {
@@ -159,44 +135,35 @@ Object {
       "description": "Intentionally complicated message type to cover many features of Protobuf.",
       "properties": Object {
         "bool_value": Object {
-          "default": null,
-          "format": "",
           "type": "boolean",
         },
         "bytes_value": Object {
-          "default": null,
           "format": "byte",
           "type": "string",
         },
         "double_value": Object {
-          "default": null,
           "format": "double",
-          "type": "string",
-        },
-        "fixed32_value": Object {
-          "default": null,
-          "format": "int32",
           "type": "number",
         },
+        "fixed32_value": Object {
+          "format": "int32",
+          "type": "integer",
+        },
         "fixed64_value": Object {
-          "default": null,
           "format": "int64",
-          "type": "string",
+          "type": "integer",
         },
         "float_value": Object {
-          "default": null,
           "format": "float",
           "type": "number",
         },
         "int32_value": Object {
-          "default": null,
           "format": "int32",
-          "type": "number",
+          "type": "integer",
         },
         "int64_value": Object {
-          "default": null,
           "format": "int64",
-          "type": "string",
+          "type": "integer",
         },
         "nested": Object {
           "description": null,
@@ -211,53 +178,41 @@ Object {
         "repeated_string_value": Object {
           "description": null,
           "items": Object {
-            "default": null,
-            "format": "",
             "type": "string",
           },
           "type": "array",
         },
         "sfixed32_value": Object {
-          "default": null,
-          "format": "int32",
-          "type": "number",
+          "format": "int64",
+          "type": "integer",
         },
         "sfixed64_value": Object {
-          "default": null,
           "format": "int64",
-          "type": "string",
+          "type": "integer",
         },
         "single_nested": Object {
           "$ref": "#/definitions/nested_message.ABitOfEverything.Nested",
         },
         "sint32_value": Object {
-          "default": null,
           "format": "int32",
-          "type": "number",
+          "type": "integer",
         },
         "sint64_value": Object {
-          "default": null,
           "format": "int64",
-          "type": "string",
+          "type": "integer",
         },
         "string_value": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
         "uint32_value": Object {
-          "default": null,
           "format": "int32",
-          "type": "number",
+          "type": "integer",
         },
         "uint64_value": Object {
-          "default": null,
           "format": "int64",
-          "type": "string",
+          "type": "integer",
         },
         "uuid": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
       },
@@ -268,13 +223,10 @@ Object {
       "description": "Nested is nested type.",
       "properties": Object {
         "amount": Object {
-          "default": null,
           "format": "int32",
-          "type": "number",
+          "type": "integer",
         },
         "name": Object {
-          "default": null,
-          "format": "",
           "type": "string",
         },
         "ok": Object {
