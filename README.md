@@ -11,7 +11,7 @@ Then you may render it easily with [SwaggerUI](https://github.com/swagger-api/sw
 - convert _service_ to paths
 - convert _enum_, _message_ to schemas in components/definitions, paths will reference to them
 - basic types mapping to JS type _number_, _string_, _boolean_ ( long types will be mapped to _string_)
-- __nested__, __repeated__ types
+- **nested**, **repeated** types
 
 # Install
 
@@ -33,16 +33,22 @@ Example:
 
 ```javascript
 module.exports = {
+  // Required
   files: ['test1.proto', 'test2.proto'],
+  // Optional
   dist: 'apischema.json',
+  // Optional
   formatServicePath: (path) => path.replace(/\./g, '/'),
+  // Optional, will convert long to string by default
+  long: 'number',
+  // Optional
   customSchema: {
     swagger: '2.0',
     paths: {
       '/api/test': {
         get: {
           responses: {
-            '200': {
+            200: {
               schema: {
                 $ref: 'GetDataResponse', // Tell me the protobuf message name
               },

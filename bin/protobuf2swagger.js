@@ -29,7 +29,10 @@ if (config.file) {
 
 (async () => {
   const content = await convert(config);
-  const dist = config.dist ? path.resolve(cwd, config.dist) : cwd;
+  const dist =
+    config.dist && path.isAbsolute(config.dist)
+      ? config.dist
+      : path.resolve(cwd, config.dist || 'swagger.json');
   fs.writeFileSync(dist, JSON.stringify(content, null, 2));
   console.info('Converted schema written into ', dist);
 })();
