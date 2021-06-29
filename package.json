@@ -23,8 +23,8 @@
   "license": "MIT",
   "dependencies": {
     "commander": "^6.1.0",
-    "protobufjs": "^6.10.1",
-    "swagger2openapi": "^7.0.2"
+    "protobufjs": "^6.11.2",
+    "swagger2openapi": "^7.0.7"
   },
   "devDependencies": {
     "jest": "^26.5.3"
