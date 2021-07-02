@@ -5,6 +5,7 @@ Object {
   "components": Object {
     "schemas": Object {
       "long.ABitOfEverything": Object {
+        "description": "",
         "properties": Object {
           "double_value": Object {
             "format": "double",
@@ -75,6 +76,7 @@ Object {
   "components": Object {
     "schemas": Object {
       "long.ABitOfEverything": Object {
+        "description": "",
         "properties": Object {
           "double_value": Object {
             "format": "double",

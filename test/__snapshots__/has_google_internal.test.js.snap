@@ -5,9 +5,10 @@ Object {
   "components": Object {
     "schemas": Object {
       "google.protobuf.FieldMask": Object {
+        "description": "",
         "properties": Object {
           "paths": Object {
-            "description": undefined,
+            "description": "",
             "items": Object {
               "type": "string",
             },
@@ -46,10 +47,10 @@ exports[`has_google_internal swagger v2 1`] = `
 Object {
   "definitions": Object {
     "google.protobuf.FieldMask": Object {
-      "description": null,
+      "description": "",
       "properties": Object {
         "paths": Object {
-          "description": undefined,
+          "description": "",
           "items": Object {
             "type": "string",
           },

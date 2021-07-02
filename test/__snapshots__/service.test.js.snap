@@ -5,6 +5,7 @@ Object {
   "components": Object {
     "schemas": Object {
       "service.Body": Object {
+        "description": "",
         "properties": Object {
           "name": Object {
             "type": "string",
@@ -50,6 +51,7 @@ See: https://google.aip.dev/133#user-specified-ids",
         "type": "object",
       },
       "service.MessageWithBody": Object {
+        "description": "",
         "properties": Object {
           "data": Object {
             "$ref": "#/components/schemas/service.Body",
@@ -72,6 +74,7 @@ See: https://google.aip.dev/133#user-specified-ids",
   "paths": Object {
     "/service.ABitOfEverythingService/test": Object {
       "post": Object {
+        "description": "",
         "operationId": "service.ABitOfEverythingService.test",
         "parameters": Object {
           "description": "A standard Create message from AIP-133 with a user-specified ID.
@@ -108,7 +111,7 @@ exports[`service swagger v2 1`] = `
 Object {
   "definitions": Object {
     "service.Body": Object {
-      "description": null,
+      "description": "",
       "properties": Object {
         "name": Object {
           "type": "string",
@@ -154,7 +157,7 @@ See: https://google.aip.dev/133#user-specified-ids",
       "type": "object",
     },
     "service.MessageWithBody": Object {
-      "description": null,
+      "description": "",
       "properties": Object {
         "data": Object {
           "$ref": "#/definitions/service.Body",
@@ -175,7 +178,7 @@ See: https://google.aip.dev/133#user-specified-ids",
   "paths": Object {
     "/service.ABitOfEverythingService/test": Object {
       "post": Object {
-        "description": null,
+        "description": "",
         "operationId": "service.ABitOfEverythingService.test",
         "parameters": Object {
           "description": "A standard Create message from AIP-133 with a user-specified ID.
