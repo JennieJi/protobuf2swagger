@@ -1,6 +1,6 @@
 {
   "name": "protobuf2swagger",
-  "version": "0.4.1",
+  "version": "0.4.2",
   "description": "Convert protobuf to swagger open api v2, v3 JSON",
   "main": "lib/index.js",
   "bin": {
