@@ -8,14 +8,12 @@ Object {
         "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
         "properties": Object {
           "path_repeated_bool_value": Object {
-            "description": "",
             "items": Object {
               "type": "boolean",
             },
             "type": "array",
           },
           "path_repeated_bytes_value": Object {
-            "description": "",
             "items": Object {
               "format": "byte",
               "type": "string",
@@ -23,7 +21,6 @@ Object {
             "type": "array",
           },
           "path_repeated_double_value": Object {
-            "description": "",
             "items": Object {
               "format": "double",
               "type": "string",
@@ -31,14 +28,12 @@ Object {
             "type": "array",
           },
           "path_repeated_enum_value": Object {
-            "description": "",
             "items": Object {
               "$ref": "#/components/schemas/repeated.NumericEnum",
             },
             "type": "array",
           },
           "path_repeated_fixed32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -46,7 +41,6 @@ Object {
             "type": "array",
           },
           "path_repeated_fixed64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -62,7 +56,6 @@ Object {
             "type": "array",
           },
           "path_repeated_int32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -70,7 +63,6 @@ Object {
             "type": "array",
           },
           "path_repeated_int64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -78,7 +70,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sfixed32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "integer",
@@ -86,7 +77,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sfixed64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -94,7 +84,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sint32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -102,7 +91,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sint64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -110,14 +98,12 @@ Object {
             "type": "array",
           },
           "path_repeated_string_value": Object {
-            "description": "",
             "items": Object {
               "type": "string",
             },
             "type": "array",
           },
           "path_repeated_uint32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -125,7 +111,6 @@ Object {
             "type": "array",
           },
           "path_repeated_uint64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -164,14 +149,12 @@ Object {
       "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
       "properties": Object {
         "path_repeated_bool_value": Object {
-          "description": "",
           "items": Object {
             "type": "boolean",
           },
           "type": "array",
         },
         "path_repeated_bytes_value": Object {
-          "description": "",
           "items": Object {
             "format": "byte",
             "type": "string",
@@ -179,7 +162,6 @@ Object {
           "type": "array",
         },
         "path_repeated_double_value": Object {
-          "description": "",
           "items": Object {
             "format": "double",
             "type": "string",
@@ -187,14 +169,12 @@ Object {
           "type": "array",
         },
         "path_repeated_enum_value": Object {
-          "description": "",
           "items": Object {
             "$ref": "#/definitions/repeated.NumericEnum",
           },
           "type": "array",
         },
         "path_repeated_fixed32_value": Object {
-          "description": "",
           "items": Object {
             "format": "int32",
             "type": "integer",
@@ -202,7 +182,6 @@ Object {
           "type": "array",
         },
         "path_repeated_fixed64_value": Object {
-          "description": "",
           "items": Object {
             "format": "int64",
             "type": "string",
@@ -218,7 +197,6 @@ Object {
           "type": "array",
         },
         "path_repeated_int32_value": Object {
-          "description": "",
           "items": Object {
             "format": "int32",
             "type": "integer",
@@ -226,7 +204,6 @@ Object {
           "type": "array",
         },
         "path_repeated_int64_value": Object {
-          "description": "",
           "items": Object {
             "format": "int64",
             "type": "string",
@@ -234,7 +211,6 @@ Object {
           "type": "array",
         },
         "path_repeated_sfixed32_value": Object {
-          "description": "",
           "items": Object {
             "format": "int64",
             "type": "integer",
@@ -242,7 +218,6 @@ Object {
           "type": "array",
         },
         "path_repeated_sfixed64_value": Object {
-          "description": "",
           "items": Object {
             "format": "int64",
             "type": "string",
@@ -250,7 +225,6 @@ Object {
           "type": "array",
         },
         "path_repeated_sint32_value": Object {
-          "description": "",
           "items": Object {
             "format": "int32",
             "type": "integer",
@@ -258,7 +232,6 @@ Object {
           "type": "array",
         },
         "path_repeated_sint64_value": Object {
-          "description": "",
           "items": Object {
             "format": "int64",
             "type": "string",
@@ -266,14 +239,12 @@ Object {
           "type": "array",
         },
         "path_repeated_string_value": Object {
-          "description": "",
           "items": Object {
             "type": "string",
           },
           "type": "array",
         },
         "path_repeated_uint32_value": Object {
-          "description": "",
           "items": Object {
             "format": "int32",
             "type": "integer",
@@ -281,7 +252,6 @@ Object {
           "type": "array",
         },
         "path_repeated_uint64_value": Object {
-          "description": "",
           "items": Object {
             "format": "int64",
             "type": "string",

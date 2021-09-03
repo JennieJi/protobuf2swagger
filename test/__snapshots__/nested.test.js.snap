@@ -39,7 +39,6 @@ Object {
             "type": "string",
           },
           "nested": Object {
-            "description": "",
             "items": Object {
               "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested",
             },
@@ -49,7 +48,6 @@ Object {
             "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested.DeepEnum",
           },
           "repeated_string_value": Object {
-            "description": "",
             "items": Object {
               "type": "string",
             },
@@ -100,6 +98,7 @@ Object {
             "type": "integer",
           },
           "name": Object {
+            "description": "name is nested field.",
             "type": "string",
           },
           "ok": Object {
@@ -168,7 +167,6 @@ Object {
           "type": "string",
         },
         "nested": Object {
-          "description": "",
           "items": Object {
             "$ref": "#/definitions/nested_message.ABitOfEverything.Nested",
           },
@@ -178,7 +176,6 @@ Object {
           "$ref": "#/definitions/nested_message.ABitOfEverything.Nested.DeepEnum",
         },
         "repeated_string_value": Object {
-          "description": "",
           "items": Object {
             "type": "string",
           },
@@ -229,10 +226,12 @@ Object {
           "type": "integer",
         },
         "name": Object {
+          "description": "name is nested field.",
           "type": "string",
         },
         "ok": Object {
           "$ref": "#/definitions/nested_message.ABitOfEverything.Nested.DeepEnum",
+          "description": "DeepEnum comment.",
         },
       },
       "required": Array [],

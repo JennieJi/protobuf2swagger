@@ -58,7 +58,6 @@ Object {
             "type": "string",
           },
           "nested": Object {
-            "description": "",
             "items": Object {
               "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested",
             },
@@ -105,7 +104,6 @@ Object {
             "type": "array",
           },
           "repeated_string_value": Object {
-            "description": "",
             "items": Object {
               "type": "string",
             },
@@ -157,6 +155,7 @@ Object {
             "type": "integer",
           },
           "name": Object {
+            "description": "name is nested field.",
             "type": "string",
           },
           "ok": Object {
@@ -179,14 +178,12 @@ Object {
         "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
         "properties": Object {
           "path_repeated_bool_value": Object {
-            "description": "",
             "items": Object {
               "type": "boolean",
             },
             "type": "array",
           },
           "path_repeated_bytes_value": Object {
-            "description": "",
             "items": Object {
               "format": "byte",
               "type": "string",
@@ -194,7 +191,6 @@ Object {
             "type": "array",
           },
           "path_repeated_double_value": Object {
-            "description": "",
             "items": Object {
               "format": "double",
               "type": "string",
@@ -202,14 +198,12 @@ Object {
             "type": "array",
           },
           "path_repeated_enum_value": Object {
-            "description": "",
             "items": Object {
               "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
             },
             "type": "array",
           },
           "path_repeated_fixed32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -217,7 +211,6 @@ Object {
             "type": "array",
           },
           "path_repeated_fixed64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -233,7 +226,6 @@ Object {
             "type": "array",
           },
           "path_repeated_int32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -241,7 +233,6 @@ Object {
             "type": "array",
           },
           "path_repeated_int64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -249,7 +240,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sfixed32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "integer",
@@ -257,7 +247,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sfixed64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -265,7 +254,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sint32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -273,7 +261,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sint64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -281,14 +268,12 @@ Object {
             "type": "array",
           },
           "path_repeated_string_value": Object {
-            "description": "",
             "items": Object {
               "type": "string",
             },
             "type": "array",
           },
           "path_repeated_uint32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -296,7 +281,6 @@ Object {
             "type": "array",
           },
           "path_repeated_uint64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -308,7 +292,6 @@ Object {
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.Body": Object {
-        "description": "",
         "properties": Object {
           "name": Object {
             "type": "string",
@@ -323,11 +306,19 @@ the CreateBookRequest message.
 
 See: https://google.aip.dev/123",
         "properties": Object {
-          "create_time": Object {},
+          "create_time": Object {
+            "description": "Output only. Creation time of the book.",
+          },
           "id": Object {
+            "description": "Output only. The book's ID.",
             "type": "string",
           },
           "name": Object {
+            "description": "The resource name of the book.
+
+Format: \`publishers/{publisher}/books/{book}\`
+
+Example: \`publishers/1257894000000000000/books/my-book\`",
             "type": "string",
           },
         },
@@ -345,9 +336,17 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Book",
           },
           "book_id": Object {
+            "description": "The ID to use for the book.
+
+This must start with an alphanumeric character.",
             "type": "string",
           },
           "parent": Object {
+            "description": "The publisher in which to create the book.
+
+Format: \`publishers/{publisher}\`
+
+Example: \`publishers/1257894000000000000\`",
             "type": "string",
           },
         },
@@ -355,7 +354,6 @@ See: https://google.aip.dev/133#user-specified-ids",
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.MessageWithBody": Object {
-        "description": "",
         "properties": Object {
           "data": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Body",
@@ -989,7 +987,6 @@ Object {
             "type": "string",
           },
           "nested": Object {
-            "description": "",
             "items": Object {
               "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested",
             },
@@ -1036,7 +1033,6 @@ Object {
             "type": "array",
           },
           "repeated_string_value": Object {
-            "description": "",
             "items": Object {
               "type": "string",
             },
@@ -1088,6 +1084,7 @@ Object {
             "type": "integer",
           },
           "name": Object {
+            "description": "name is nested field.",
             "type": "string",
           },
           "ok": Object {
@@ -1110,14 +1107,12 @@ Object {
         "description": "ABitOfEverythingRepeated is used to validate repeated path parameter functionality",
         "properties": Object {
           "path_repeated_bool_value": Object {
-            "description": "",
             "items": Object {
               "type": "boolean",
             },
             "type": "array",
           },
           "path_repeated_bytes_value": Object {
-            "description": "",
             "items": Object {
               "format": "byte",
               "type": "string",
@@ -1125,7 +1120,6 @@ Object {
             "type": "array",
           },
           "path_repeated_double_value": Object {
-            "description": "",
             "items": Object {
               "format": "double",
               "type": "string",
@@ -1133,14 +1127,12 @@ Object {
             "type": "array",
           },
           "path_repeated_enum_value": Object {
-            "description": "",
             "items": Object {
               "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.NumericEnum",
             },
             "type": "array",
           },
           "path_repeated_fixed32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -1148,7 +1140,6 @@ Object {
             "type": "array",
           },
           "path_repeated_fixed64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -1164,7 +1155,6 @@ Object {
             "type": "array",
           },
           "path_repeated_int32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -1172,7 +1162,6 @@ Object {
             "type": "array",
           },
           "path_repeated_int64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -1180,7 +1169,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sfixed32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "integer",
@@ -1188,7 +1176,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sfixed64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -1196,7 +1183,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sint32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -1204,7 +1190,6 @@ Object {
             "type": "array",
           },
           "path_repeated_sint64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -1212,14 +1197,12 @@ Object {
             "type": "array",
           },
           "path_repeated_string_value": Object {
-            "description": "",
             "items": Object {
               "type": "string",
             },
             "type": "array",
           },
           "path_repeated_uint32_value": Object {
-            "description": "",
             "items": Object {
               "format": "int32",
               "type": "integer",
@@ -1227,7 +1210,6 @@ Object {
             "type": "array",
           },
           "path_repeated_uint64_value": Object {
-            "description": "",
             "items": Object {
               "format": "int64",
               "type": "string",
@@ -1239,7 +1221,6 @@ Object {
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.Body": Object {
-        "description": "",
         "properties": Object {
           "name": Object {
             "type": "string",
@@ -1254,11 +1235,19 @@ the CreateBookRequest message.
 
 See: https://google.aip.dev/123",
         "properties": Object {
-          "create_time": Object {},
+          "create_time": Object {
+            "description": "Output only. Creation time of the book.",
+          },
           "id": Object {
+            "description": "Output only. The book's ID.",
             "type": "string",
           },
           "name": Object {
+            "description": "The resource name of the book.
+
+Format: \`publishers/{publisher}/books/{book}\`
+
+Example: \`publishers/1257894000000000000/books/my-book\`",
             "type": "string",
           },
         },
@@ -1276,9 +1265,17 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Book",
           },
           "book_id": Object {
+            "description": "The ID to use for the book.
+
+This must start with an alphanumeric character.",
             "type": "string",
           },
           "parent": Object {
+            "description": "The publisher in which to create the book.
+
+Format: \`publishers/{publisher}\`
+
+Example: \`publishers/1257894000000000000\`",
             "type": "string",
           },
         },
@@ -1286,7 +1283,6 @@ See: https://google.aip.dev/133#user-specified-ids",
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.MessageWithBody": Object {
-        "description": "",
         "properties": Object {
           "data": Object {
             "$ref": "#/components/schemas/grpc.gateway.examples.internal.examplepb.Body",

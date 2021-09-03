@@ -5,7 +5,6 @@ Object {
   "components": Object {
     "schemas": Object {
       "service.Body": Object {
-        "description": "",
         "properties": Object {
           "name": Object {
             "type": "string",
@@ -21,9 +20,15 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
         "properties": Object {
           "id": Object {
+            "description": "Output only. The book's ID.",
             "type": "string",
           },
           "name": Object {
+            "description": "The resource name of the book.
+
+Format: \`publishers/{publisher}/books/{book}\`
+
+Example: \`publishers/1257894000000000000/books/my-book\`",
             "type": "string",
           },
         },
@@ -41,9 +46,17 @@ See: https://google.aip.dev/133#user-specified-ids",
             "$ref": "#/components/schemas/service.Book",
           },
           "book_id": Object {
+            "description": "The ID to use for the book.
+
+This must start with an alphanumeric character.",
             "type": "string",
           },
           "parent": Object {
+            "description": "The publisher in which to create the book.
+
+Format: \`publishers/{publisher}\`
+
+Example: \`publishers/1257894000000000000\`",
             "type": "string",
           },
         },
@@ -51,7 +64,6 @@ See: https://google.aip.dev/133#user-specified-ids",
         "type": "object",
       },
       "service.MessageWithBody": Object {
-        "description": "",
         "properties": Object {
           "data": Object {
             "$ref": "#/components/schemas/service.Body",
@@ -111,7 +123,6 @@ exports[`service swagger v2 1`] = `
 Object {
   "definitions": Object {
     "service.Body": Object {
-      "description": "",
       "properties": Object {
         "name": Object {
           "type": "string",
@@ -127,9 +138,15 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
       "properties": Object {
         "id": Object {
+          "description": "Output only. The book's ID.",
           "type": "string",
         },
         "name": Object {
+          "description": "The resource name of the book.
+
+Format: \`publishers/{publisher}/books/{book}\`
+
+Example: \`publishers/1257894000000000000/books/my-book\`",
           "type": "string",
         },
       },
@@ -145,11 +162,20 @@ See: https://google.aip.dev/133#user-specified-ids",
       "properties": Object {
         "book": Object {
           "$ref": "#/definitions/service.Book",
+          "description": "The book to create.",
         },
         "book_id": Object {
+          "description": "The ID to use for the book.
+
+This must start with an alphanumeric character.",
           "type": "string",
         },
         "parent": Object {
+          "description": "The publisher in which to create the book.
+
+Format: \`publishers/{publisher}\`
+
+Example: \`publishers/1257894000000000000\`",
           "type": "string",
         },
       },
@@ -157,7 +183,6 @@ See: https://google.aip.dev/133#user-specified-ids",
       "type": "object",
     },
     "service.MessageWithBody": Object {
-      "description": "",
       "properties": Object {
         "data": Object {
           "$ref": "#/definitions/service.Body",

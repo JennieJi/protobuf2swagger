@@ -11,9 +11,15 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
         "properties": Object {
           "id": Object {
+            "description": "Output only. The book's ID.",
             "type": "string",
           },
           "name": Object {
+            "description": "The resource name of the book.
+
+Format: \`publishers/{publisher}/books/{book}\`
+
+Example: \`publishers/1257894000000000000/books/my-book\`",
             "type": "string",
           },
         },
@@ -42,9 +48,15 @@ the CreateBookRequest message.
 See: https://google.aip.dev/123",
       "properties": Object {
         "id": Object {
+          "description": "Output only. The book's ID.",
           "type": "string",
         },
         "name": Object {
+          "description": "The resource name of the book.
+
+Format: \`publishers/{publisher}/books/{book}\`
+
+Example: \`publishers/1257894000000000000/books/my-book\`",
           "type": "string",
         },
       },
