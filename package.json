@@ -27,6 +27,7 @@
     "swagger2openapi": "^7.0.7"
   },
   "devDependencies": {
-    "jest": "^26.5.3"
+    "jest": "^26.5.3",
+    "prettier": "^2.3.2"
   }
 }
