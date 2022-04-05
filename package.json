@@ -22,6 +22,8 @@
   "author": "Jennie Ji <jennie.ji@hotmail.com>",
   "license": "MIT",
   "dependencies": {
+    "@actions/core": "^1.6.0",
+    "@actions/github": "^5.0.1",
     "commander": "^6.1.0",
     "protobufjs": "^6.11.2",
     "swagger2openapi": "^7.0.7"

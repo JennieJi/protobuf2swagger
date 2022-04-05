@@ -1,6 +1,9 @@
 #!/usr/bin/env node
 'use strict';
 
+const core = require('@actions/core');
+const github = require('@actions/github');
+
 const path = require('path');
 const program = require('commander');
 const pkg = require('../package.json');
@@ -19,20 +22,15 @@ program
   })
   .parse(process.argv);
 
-const [configPath] = program.args;
-const cwd = process.cwd();
-const DEFAULT_CONFIG_PATH = 'protobuf2swagger.config.js';
-const config = require(path.resolve(cwd, configPath || DEFAULT_CONFIG_PATH));
-if (config.file) {
-  config.files = config.files ? [config.file, ...config.files] : [config.file];
+
+const config = {
+  files: [core.getInput('protobuf')]
 }
+
 
 (async () => {
   const content = await convert(config);
-  const dist =
-    config.dist && path.isAbsolute(config.dist)
-      ? config.dist
-      : path.resolve(cwd, config.dist || 'swagger.json');
-  fs.writeFileSync(dist, JSON.stringify(content, null, 2));
+  const openapi = JSON.stringify(content, null, 2)
+  core.setOutput("openapi", openapi);
   console.info('Converted schema written into ', dist);
 })();

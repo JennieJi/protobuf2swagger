@@ -1,0 +1,16 @@
+
+name: 'protobuf to openapi'
+branding:
+  icon: "airplay"
+  color: "gray-dark"
+description: 'Take a protobuf file and return openapi'
+inputs:
+  protobuf:  
+    description: 'a protobuf file'
+    required: true
+outputs:
+  openapi: # id of output
+    description: 'The time we greeted you'
+runs:
+  using: 'node16'
+  main: 'bin/protobuf2swagger.js'
