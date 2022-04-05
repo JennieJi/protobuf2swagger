@@ -88,18 +88,20 @@ Example: \`publishers/1257894000000000000\`",
       "post": Object {
         "description": "",
         "operationId": "service.ABitOfEverythingService.test",
-        "parameters": Object {
+        "requestBody": Object {
+          "content": Object {
+            "application/json": Object {
+              "schema": Object {
+                "$ref": "#/components/schemas/service.CreateBookRequest",
+              },
+            },
+          },
           "description": "A standard Create message from AIP-133 with a user-specified ID.
 The user-specified ID (the \`book_id\` field in this example) must become a
 query parameter in the OpenAPI spec.
 
 See: https://google.aip.dev/133#user-specified-ids",
-          "in": "body",
-          "name": "body",
           "required": true,
-          "schema": Object {
-            "$ref": "#/components/schemas/service.CreateBookRequest",
-          },
         },
         "responses": Object {
           "200": Object {
@@ -205,19 +207,21 @@ Example: \`publishers/1257894000000000000\`",
       "post": Object {
         "description": "",
         "operationId": "service.ABitOfEverythingService.test",
-        "parameters": Object {
-          "description": "A standard Create message from AIP-133 with a user-specified ID.
+        "parameters": Array [
+          Object {
+            "description": "A standard Create message from AIP-133 with a user-specified ID.
 The user-specified ID (the \`book_id\` field in this example) must become a
 query parameter in the OpenAPI spec.
 
 See: https://google.aip.dev/133#user-specified-ids",
-          "in": "body",
-          "name": "body",
-          "required": true,
-          "schema": Object {
-            "$ref": "#/definitions/service.CreateBookRequest",
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": Object {
+              "$ref": "#/definitions/service.CreateBookRequest",
+            },
           },
-        },
+        ],
         "responses": Object {
           "200": Object {
             "description": "",
