@@ -1,0 +1,188 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "counter_api",
+    "description": "",
+    "version": "1"
+  },
+  "paths": {
+    "/com.example.CounterService/Increase": {
+      "post": {
+        "operationId": "com.example.CounterService.Increase",
+        "description": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/com.example.IncreaseValue"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/google.protobuf.Empty"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/com.example.CounterService/Decrease": {
+      "post": {
+        "operationId": "com.example.CounterService.Decrease",
+        "description": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/com.example.DecreaseValue"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/google.protobuf.Empty"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/com.example.CounterService/Reset": {
+      "post": {
+        "operationId": "com.example.CounterService.Reset",
+        "description": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/com.example.ResetValue"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/google.protobuf.Empty"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/com.example.CounterService/GetCurrentCounter": {
+      "post": {
+        "operationId": "com.example.CounterService.GetCurrentCounter",
+        "description": "",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/com.example.GetCounter"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "",
+            "content": {
+              "*/*": {
+                "schema": {
+                  "$ref": "#/components/schemas/com.example.CurrentCounter"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "com.example.IncreaseValue": {
+        "type": "object",
+        "properties": {
+          "counter_id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "com.example.DecreaseValue": {
+        "type": "object",
+        "properties": {
+          "counter_id": {
+            "type": "string"
+          },
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "com.example.ResetValue": {
+        "type": "object",
+        "properties": {
+          "counter_id": {
+            "type": "string"
+          }
+        }
+      },
+      "com.example.GetCounter": {
+        "type": "object",
+        "properties": {
+          "counter_id": {
+            "type": "string"
+          }
+        }
+      },
+      "com.example.CurrentCounter": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      },
+      "google.protobuf.Empty": {
+        "type": "object",
+        "properties": {}
+      },
+      "com.example.domain.CounterState": {
+        "type": "object",
+        "properties": {
+          "value": {
+            "type": "integer",
+            "format": "int32"
+          }
+        }
+      }
+    }
+  }
+}

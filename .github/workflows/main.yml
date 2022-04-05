@@ -1,0 +1,17 @@
+on: push
+
+jobs:
+  lint:
+    name: lint openapi
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+      - uses: addnab/docker-run-action@v3
+        with:
+          username: ${{ secrets.DOCKERHUB_USER }}
+          password: ${{ secrets.DOCKERHUB_PASSWORD }}
+          registry: docker.io
+          image: miguelemos/openapi:latest
+          options: -v ${{ github.workspace }}:/data
+          run: /app/bin/openapi /data/openapi.json
