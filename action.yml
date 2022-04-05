@@ -13,4 +13,4 @@ outputs:
     description: 'The time we greeted you'
 runs:
   using: 'node16'
-  main: 'bin/protobuf2swagger.js'
+  main: 'dist/index.js'
