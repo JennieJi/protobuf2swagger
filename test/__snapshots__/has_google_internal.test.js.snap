@@ -13,7 +13,6 @@ Object {
             "type": "array",
           },
         },
-        "required": Array [],
         "type": "object",
       },
       "has_google_internal.UpdateV2Request": Object {
@@ -26,7 +25,6 @@ Object {
             "$ref": "#/components/schemas/google.protobuf.FieldMask",
           },
         },
-        "required": Array [],
         "type": "object",
       },
     },
@@ -53,7 +51,6 @@ Object {
           "type": "array",
         },
       },
-      "required": Array [],
       "type": "object",
     },
     "has_google_internal.UpdateV2Request": Object {
@@ -66,7 +63,6 @@ Object {
           "$ref": "#/definitions/google.protobuf.FieldMask",
         },
       },
-      "required": Array [],
       "type": "object",
     },
   },

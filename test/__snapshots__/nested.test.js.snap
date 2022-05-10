@@ -87,7 +87,6 @@ Object {
             "type": "string",
           },
         },
-        "required": Array [],
         "type": "object",
       },
       "nested_message.ABitOfEverything.Nested": Object {
@@ -105,7 +104,6 @@ Object {
             "$ref": "#/components/schemas/nested_message.ABitOfEverything.Nested.DeepEnum",
           },
         },
-        "required": Array [],
         "type": "object",
       },
       "nested_message.ABitOfEverything.Nested.DeepEnum": Object {
@@ -215,7 +213,6 @@ Object {
           "type": "string",
         },
       },
-      "required": Array [],
       "type": "object",
     },
     "nested_message.ABitOfEverything.Nested": Object {
@@ -234,7 +231,6 @@ Object {
           "description": "DeepEnum comment.",
         },
       },
-      "required": Array [],
       "type": "object",
     },
     "nested_message.ABitOfEverything.Nested.DeepEnum": Object {

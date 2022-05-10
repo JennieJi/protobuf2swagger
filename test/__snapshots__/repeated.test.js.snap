@@ -118,7 +118,6 @@ Object {
             "type": "array",
           },
         },
-        "required": Array [],
         "type": "object",
       },
       "repeated.NumericEnum": Object {
@@ -259,7 +258,6 @@ Object {
           "type": "array",
         },
       },
-      "required": Array [],
       "type": "object",
     },
     "repeated.NumericEnum": Object {

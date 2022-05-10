@@ -14,5 +14,6 @@ message Book {
 	string name = 1;
 
 	// Output only. The book's ID.
-	string id = 2;
+	required string id = 2;
+	optional int32 stock = 3;
 }

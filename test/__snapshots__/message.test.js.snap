@@ -22,8 +22,14 @@ Format: \`publishers/{publisher}/books/{book}\`
 Example: \`publishers/1257894000000000000/books/my-book\`",
             "type": "string",
           },
+          "stock": Object {
+            "format": "int32",
+            "type": "integer",
+          },
         },
-        "required": Array [],
+        "required": Array [
+          "id",
+        ],
         "type": "object",
       },
     },
@@ -59,8 +65,14 @@ Format: \`publishers/{publisher}/books/{book}\`
 Example: \`publishers/1257894000000000000/books/my-book\`",
           "type": "string",
         },
+        "stock": Object {
+          "format": "int32",
+          "type": "integer",
+        },
       },
-      "required": Array [],
+      "required": Array [
+        "id",
+      ],
       "type": "object",
     },
   },
