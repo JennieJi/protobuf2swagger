@@ -52,4 +52,10 @@ message CreateBookRequest {
 // proto messages and URL templates are still processed correctly.
 service ABitOfEverythingService {
 	rpc test(service.CreateBookRequest) returns (service.MessageWithBody) {}
+	rpc testGet(service.CreateBookRequest) returns (service.MessageWithBody) {
+		option method = "get";
+	}
+	rpc testPost(service.CreateBookRequest) returns (service.MessageWithBody) {
+		option method = "post";
+	}
 }

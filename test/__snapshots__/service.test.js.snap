@@ -115,6 +115,90 @@ See: https://google.aip.dev/133#user-specified-ids",
         },
       },
     },
+    "/service.ABitOfEverythingService/testGet": Object {
+      "get": Object {
+        "description": "",
+        "operationId": "service.ABitOfEverythingService.testGet",
+        "parameters": Array [
+          Object {
+            "description": "The publisher in which to create the book.
+
+Format: \`publishers/{publisher}\`
+
+Example: \`publishers/1257894000000000000\`",
+            "name": "parent",
+            "paramIn": "query",
+            "required": false,
+            "schema": Object {
+              "type": "string",
+            },
+          },
+          Object {
+            "description": "The book to create.",
+            "name": "book",
+            "paramIn": "query",
+            "required": false,
+            "schema": Object {
+              "type": "string",
+            },
+          },
+          Object {
+            "description": "The ID to use for the book.
+
+This must start with an alphanumeric character.",
+            "name": "book_id",
+            "paramIn": "query",
+            "required": false,
+            "schema": Object {
+              "type": "string",
+            },
+          },
+        ],
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "*/*": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/service.MessageWithBody",
+                },
+              },
+            },
+            "description": "",
+          },
+        },
+      },
+    },
+    "/service.ABitOfEverythingService/testPost": Object {
+      "post": Object {
+        "description": "",
+        "operationId": "service.ABitOfEverythingService.testPost",
+        "parameters": Object {
+          "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+          "in": "body",
+          "name": "body",
+          "required": true,
+          "schema": Object {
+            "$ref": "#/components/schemas/service.CreateBookRequest",
+          },
+        },
+        "responses": Object {
+          "200": Object {
+            "content": Object {
+              "*/*": Object {
+                "schema": Object {
+                  "$ref": "#/components/schemas/service.MessageWithBody",
+                },
+              },
+            },
+            "description": "",
+          },
+        },
+      },
+    },
   },
 }
 `;
@@ -205,6 +289,76 @@ Example: \`publishers/1257894000000000000\`",
       "post": Object {
         "description": "",
         "operationId": "service.ABitOfEverythingService.test",
+        "parameters": Object {
+          "description": "A standard Create message from AIP-133 with a user-specified ID.
+The user-specified ID (the \`book_id\` field in this example) must become a
+query parameter in the OpenAPI spec.
+
+See: https://google.aip.dev/133#user-specified-ids",
+          "in": "body",
+          "name": "body",
+          "required": true,
+          "schema": Object {
+            "$ref": "#/definitions/service.CreateBookRequest",
+          },
+        },
+        "responses": Object {
+          "200": Object {
+            "description": "",
+            "schema": Object {
+              "$ref": "#/definitions/service.MessageWithBody",
+            },
+          },
+        },
+      },
+    },
+    "/service.ABitOfEverythingService/testGet": Object {
+      "get": Object {
+        "description": "",
+        "operationId": "service.ABitOfEverythingService.testGet",
+        "parameters": Array [
+          Object {
+            "description": "The publisher in which to create the book.
+
+Format: \`publishers/{publisher}\`
+
+Example: \`publishers/1257894000000000000\`",
+            "name": "parent",
+            "paramIn": "query",
+            "required": false,
+            "type": "string",
+          },
+          Object {
+            "description": "The book to create.",
+            "name": "book",
+            "paramIn": "query",
+            "required": false,
+            "type": "string",
+          },
+          Object {
+            "description": "The ID to use for the book.
+
+This must start with an alphanumeric character.",
+            "name": "book_id",
+            "paramIn": "query",
+            "required": false,
+            "type": "string",
+          },
+        ],
+        "responses": Object {
+          "200": Object {
+            "description": "",
+            "schema": Object {
+              "$ref": "#/definitions/service.MessageWithBody",
+            },
+          },
+        },
+      },
+    },
+    "/service.ABitOfEverythingService/testPost": Object {
+      "post": Object {
+        "description": "",
+        "operationId": "service.ABitOfEverythingService.testPost",
         "parameters": Object {
           "description": "A standard Create message from AIP-133 with a user-specified ID.
 The user-specified ID (the \`book_id\` field in this example) must become a
