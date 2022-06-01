@@ -6,6 +6,15 @@ describe('service', () => {
     const protopath = path.resolve(__dirname, '__fixtures__/service.proto');
     const converted = await convert({
       files: [protopath],
+      transform(type, result) {
+        if (type === 'service') {
+          return {
+            ...result,
+            '/test': {},
+          };
+        }
+        return result;
+      },
     });
     expect(converted).toMatchSnapshot();
   });

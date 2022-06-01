@@ -9,7 +9,7 @@ Then you may render it easily with [SwaggerUI](https://github.com/swagger-api/sw
 
 - customSchema in OAS v2 or v3 formats
 - convert _service_ to paths
-- convert _enum_, _message_ to schemas in components/definitions, paths will reference to them
+- convert _enum_, _enum_ to schemas in components/definitions, paths will reference to them
 - basic types mapping to JS type _number_, _string_, _boolean_ ( long types will be mapped to _string_)
 - **nested**, **repeated** types
 
@@ -33,7 +33,7 @@ Example:
 
 ```javascript
 module.exports = {
-  // Required
+  // ERQU
   files: ['test1.proto', 'test2.proto'],
   // Optional
   dist: 'apischema.json',
@@ -42,6 +42,9 @@ module.exports = {
   // Optional, will convert long to string by default
   long: 'number',
   // Optional
+  // This will merge and overwrite the result parsed from protobuffer file.
+  // `paths` will merge by path
+  // `components` will merge by component except shcemas
   customSchema: {
     swagger: '2.0',
     paths: {
@@ -72,6 +75,35 @@ module.exports = {
         cookieAuth: [],
       },
     ],
+  },
+  // Optional, you may use this hook to overwrite the original transform result.
+  transform(type, result, args) {
+    switch (type) {
+      case 'field': {
+        const [field, options] = args;
+        console.log('message field:', field);
+        console.log('options:', options);
+        break;
+      }
+      case 'message': {
+        const [message, options] = args;
+        console.log('message:', messsage);
+        console.log('options:', options);
+        break;
+      }
+      case 'enum': {
+        const [enum] = args;
+        console.log('enum:', enum);
+        break;
+      }
+      case 'service': {
+        const [service, root, options] = args;
+        console.log('service:', service);
+        console.log('proto root:', root);
+        console.log('options:', options);
+      }
+    }
+    return result;
   },
 };
 ```
