@@ -192,6 +192,7 @@ This must start with an alphanumeric character.",
         },
       },
     },
+    "/test": Object {},
   },
 }
 `;
@@ -375,6 +376,7 @@ See: https://google.aip.dev/133#user-specified-ids",
         },
       },
     },
+    "/test": Object {},
   },
   "swagger": "2.0",
 }

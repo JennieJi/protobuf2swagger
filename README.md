@@ -9,7 +9,7 @@ Then you may render it easily with [SwaggerUI](https://github.com/swagger-api/sw
 
 - customSchema in OAS v2 or v3 formats
 - convert _service_ to paths
-- convert _enum_, _message_ to schemas in components/definitions, paths will reference to them
+- convert _enum_, _enum_ to schemas in components/definitions, paths will reference to them
 - basic types mapping to JS type _number_, _string_, _boolean_ ( long types will be mapped to _string_)
 - **nested**, **repeated** types
 
@@ -33,27 +33,27 @@ Example:
 
 ```javascript
 module.exports = {
-  // Required
-  files: ["test1.proto", "test2.proto"],
+  // ERQU
+  files: ['test1.proto', 'test2.proto'],
   // Optional
-  dist: "apischema.json",
+  dist: 'apischema.json',
   // Optional
-  formatServicePath: (path) => path.replace(/\./g, "/"),
+  formatServicePath: (path) => path.replace(/\./g, '/'),
   // Optional, will convert long to string by default
-  long: "number",
+  long: 'number',
   // Optional
   // This will merge and overwrite the result parsed from protobuffer file.
   // `paths` will merge by path
   // `components` will merge by component except shcemas
   customSchema: {
-    swagger: "2.0",
+    swagger: '2.0',
     paths: {
-      "/api/test": {
+      '/api/test': {
         get: {
           responses: {
             200: {
               schema: {
-                $ref: "GetDataResponse", // Tell me the protobuf message name
+                $ref: 'GetDataResponse', // Tell me the protobuf message name
               },
             },
           },
@@ -64,9 +64,9 @@ module.exports = {
     components: {
       securitySchemes: {
         cookieAuth: {
-          type: "apiKey",
-          in: "cookie",
-          name: "token",
+          type: 'apiKey',
+          in: 'cookie',
+          name: 'token',
         },
       },
     },
@@ -75,6 +75,35 @@ module.exports = {
         cookieAuth: [],
       },
     ],
+  },
+  // Optional, you may use this hook to overwrite the original transform result.
+  transform(type, result, args) {
+    switch (type) {
+      case 'field': {
+        const [field, options] = args;
+        console.log('message field:', field);
+        console.log('options:', options);
+        break;
+      }
+      case 'message': {
+        const [message, options] = args;
+        console.log('message:', messsage);
+        console.log('options:', options);
+        break;
+      }
+      case 'enum': {
+        const [enum] = args;
+        console.log('enum:', enum);
+        break;
+      }
+      case 'service': {
+        const [service, root, options] = args;
+        console.log('service:', service);
+        console.log('proto root:', root);
+        console.log('options:', options);
+      }
+    }
+    return result;
   },
 };
 ```
@@ -123,12 +152,12 @@ index.html (modified from swagger-ui-dist)
       window.onload = function () {
         // Begin Swagger UI call region
         const ui = SwaggerUIBundle({
-          url: "./apischema.json", // Path to the generated schema JSON file
-          dom_id: "#swagger-ui",
+          url: './apischema.json', // Path to the generated schema JSON file
+          dom_id: '#swagger-ui',
           deepLinking: true,
           presets: [SwaggerUIBundle.presets.apis, SwaggerUIStandalonePreset],
           plugins: [SwaggerUIBundle.plugins.DownloadUrl],
-          layout: "StandaloneLayout",
+          layout: 'StandaloneLayout',
         });
         // End Swagger UI call region
         window.ui = ui;
@@ -141,11 +170,11 @@ index.html (modified from swagger-ui-dist)
 Serve with simple [express](https://www.npmjs.com/package/express) server:
 
 ```javascript
-const express = require("express");
+const express = require('express');
 const app = express();
 
 app.use(express.static(__dirname /* path to index.html */));
 app.listen(3000);
 
-console.info("Served at port 3000");
+console.info('Served at port 3000');
 ```
