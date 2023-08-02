@@ -87,7 +87,7 @@ module.exports = {
       }
       case 'message': {
         const [message, options] = args;
-        console.log('message:', messsage);
+        console.log('message:', message);
         console.log('options:', options);
         break;
       }
