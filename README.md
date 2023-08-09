@@ -92,9 +92,9 @@ module.exports = {
         break;
       }
       case 'enum': {
-        const [enum] = args;
-        console.log('enum:', enum);
-        break;
+        const [Enum] = args;
+        console.log('enum:', Enum);
+        return { ...result, type: 'string', enum: Object.keys(Enum.values) };
       }
       case 'service': {
         const [service, root, options] = args;
