@@ -5,7 +5,8 @@ Object {
   "components": Object {
     "schemas": Object {
       "examplepb.NumericEnum": Object {
-        "description": "0 - ZERO // ZERO means 0
+        "description": "NumericEnum is one or zero.
+0 - ZERO // ZERO means 0
 1 - ONE // ONE means 1",
         "enum": Array [
           0,
@@ -29,7 +30,8 @@ exports[`enum swagger v2 1`] = `
 Object {
   "definitions": Object {
     "examplepb.NumericEnum": Object {
-      "description": "0 - ZERO // ZERO means 0
+      "description": "NumericEnum is one or zero.
+0 - ZERO // ZERO means 0
 1 - ONE // ONE means 1",
       "enum": Array [
         0,

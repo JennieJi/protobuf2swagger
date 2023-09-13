@@ -177,7 +177,8 @@ Object {
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested.DeepEnum": Object {
-        "description": "0 - FALSE // FALSE is false.
+        "description": "DeepEnum is one or zero.
+0 - FALSE // FALSE is false.
 1 - TRUE // TRUE is true.",
         "enum": Array [
           0,
@@ -372,7 +373,8 @@ Example: \`publishers/1257894000000000000\`",
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.NumericEnum": Object {
-        "description": "0 - ZERO // ZERO means 0
+        "description": "NumericEnum is one or zero.
+0 - ZERO // ZERO means 0
 1 - ONE // ONE means 1",
         "enum": Array [
           0,
@@ -1071,7 +1073,8 @@ Object {
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.ABitOfEverything.Nested.DeepEnum": Object {
-        "description": "0 - FALSE // FALSE is false.
+        "description": "DeepEnum is one or zero.
+0 - FALSE // FALSE is false.
 1 - TRUE // TRUE is true.",
         "enum": Array [
           0,
@@ -1266,7 +1269,8 @@ Example: \`publishers/1257894000000000000\`",
         "type": "object",
       },
       "grpc.gateway.examples.internal.examplepb.NumericEnum": Object {
-        "description": "0 - ZERO // ZERO means 0
+        "description": "NumericEnum is one or zero.
+0 - ZERO // ZERO means 0
 1 - ONE // ONE means 1",
         "enum": Array [
           0,
