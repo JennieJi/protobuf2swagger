@@ -107,7 +107,8 @@ Object {
         "type": "object",
       },
       "nested_message.ABitOfEverything.Nested.DeepEnum": Object {
-        "description": "0 - FALSE // FALSE is false.
+        "description": "DeepEnum is one or zero.
+0 - FALSE // FALSE is false.
 1 - TRUE // TRUE is true.",
         "enum": Array [
           0,
@@ -234,7 +235,8 @@ Object {
       "type": "object",
     },
     "nested_message.ABitOfEverything.Nested.DeepEnum": Object {
-      "description": "0 - FALSE // FALSE is false.
+      "description": "DeepEnum is one or zero.
+0 - FALSE // FALSE is false.
 1 - TRUE // TRUE is true.",
       "enum": Array [
         0,

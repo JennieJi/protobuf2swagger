@@ -121,7 +121,8 @@ Object {
         "type": "object",
       },
       "repeated.NumericEnum": Object {
-        "description": "0 - ZERO // ZERO means 0
+        "description": "NumericEnum is one or zero.
+0 - ZERO // ZERO means 0
 1 - ONE // ONE means 1",
         "enum": Array [
           0,
@@ -261,7 +262,8 @@ Object {
       "type": "object",
     },
     "repeated.NumericEnum": Object {
-      "description": "0 - ZERO // ZERO means 0
+      "description": "NumericEnum is one or zero.
+0 - ZERO // ZERO means 0
 1 - ONE // ONE means 1",
       "enum": Array [
         0,
